@@ -1,57 +1,55 @@
-```markdown
+
 # Weather Microservices Project
 
-This project is a Spring Cloud-based distributed microservices system simulating a weather information platform. It includes service registration, configuration management, API gateway, weather data services, and centralized log monitoring.
+This project is a Spring Cloud-based distributed microservices system simulating a weather information platform. It includes service registration, configuration management, API gateway, weather data services, and centralized log monitoring with Splunk.
 
 ## 🧩 Project Structure
 
-```
-
+```plaintext
 weather-master/
-├── config                          # Spring Cloud Config Server
-├── discovery                       # Eureka Discovery Server
-├── gateway                         # API Gateway (Spring Cloud Gateway)
-├── search                          # Composite Service - combines other services
-├── student-management-service      # Student data service
-├── details                         # City/Weather details service
-├── properties                      # Centralized configuration files (used by Config Server)
-
+├── config                      # Spring Cloud Config Server
+├── discovery                   # Eureka Discovery Server
+├── gateway                     # API Gateway (Spring Cloud Gateway)
+├── search                      # Composite Service - combines other services
+├── student-management-service  # Student data service
+├── details                     # City/Weather details service
+├── properties                  # Centralized configuration files (used by Config Server)
 ````
 
 ## 🛠️ Tech Stack
 
-- Java 11
-- Spring Boot 2.1.7
-- Spring Cloud Greenwich SR2
-- Eureka (Service Discovery)
-- Spring Cloud Config
-- Spring Cloud Gateway
-- Logback (Custom logging via `logback-spring.xml`)
-- Splunk (Log aggregation and search)
-- Maven
+* Java 11
+* Spring Boot 2.1.7
+* Spring Cloud Greenwich SR2
+* Eureka (Service Discovery)
+* Spring Cloud Config
+* Spring Cloud Gateway
+* Logback (`logback-spring.xml`)
+* Splunk Universal Forwarder + Splunk Enterprise
+* Maven
 
 ## 📄 Features
 
-- Centralized config management via Spring Cloud Config Server
-- Service discovery and registration via Eureka
-- Gateway routing via Spring Cloud Gateway
-- Microservices call each other using `RestTemplate` + Ribbon + CompletableFuture
-- Hystrix circuit breaker for fault tolerance
-- Logback-based file logging per service
-- Splunk Universal Forwarder to send logs to local Splunk Enterprise
-- API documentation via Swagger UI
+* Centralized configuration via Spring Cloud Config
+* Service discovery via Eureka
+* Gateway routing with Spring Cloud Gateway
+* Service-to-service calls using `RestTemplate`, Ribbon, and `CompletableFuture`
+* Hystrix circuit breaker integration
+* Logback-based file logging per service
+* Splunk log aggregation and search
+* Swagger UI API documentation
 
-## 🧪 How to Run
+## ▶️ How to Run
 
-### 1. Start Support Services (in order):
+### 1. Start infrastructure services (in order):
 
 ```bash
 cd config && ./mvnw spring-boot:run
 cd discovery && ./mvnw spring-boot:run
 cd gateway && ./mvnw spring-boot:run
-````
+```
 
-### 2. Start Application Services:
+### 2. Start application services:
 
 ```bash
 cd search && ./mvnw spring-boot:run
@@ -59,39 +57,44 @@ cd student-management-service && ./mvnw spring-boot:run
 cd details && ./mvnw spring-boot:run
 ```
 
-> Make sure your working directory is set correctly if using IntelliJ (so logs will write to `/logs/*.log`).
+> ✅ Tip: Make sure IntelliJ or terminal's working directory is set correctly so logs are generated in `/logs/*.log`.
 
 ## 📦 Logging & Splunk Integration
 
-Each microservice writes logs to its own log file using `logback-spring.xml`.
+Each microservice logs to its own file using `logback-spring.xml`.
 
 Example log files:
 
-* `search/logs/search.log`
-* `student-management-service/logs/student.log`
-* `config/logs/config.log`
-* `discovery/logs/discovery.log`
-* `details/logs/details.log`
-* `gateway/logs/gateway.log`
+```
+search/logs/search.log
+student-management-service/logs/student.log
+config/logs/config.log
+discovery/logs/discovery.log
+details/logs/details.log
+gateway/logs/gateway.log
+```
 
-A local **Splunk Universal Forwarder** is configured to monitor these files and send logs to local **Splunk Enterprise** running at `localhost:9997`.
+The **Splunk Universal Forwarder** monitors these files and forwards data to **Splunk Enterprise** on `localhost:9997`.
 
-### 🔍 Example Splunk Search
+### 🔍 Example Splunk search query:
 
 ```spl
-source="*search.log" OR source="*student.log"
+source="*/logs/*.log"
 ```
+
+> View results at: [http://localhost:8000](http://localhost:8000) → Search & Reporting
 
 ## 📸 Recommended Screenshots for Submission
 
-* ✅ Splunk Web showing logs from at least 2 services
-* ✅ Swagger UI page (`http://localhost:<port>/swagger-ui.html`)
-* ✅ IntelliJ console output showing `INFO` logs (from `logger.info`)
-* ✅ Directory tree showing `/logs/*.log` files per service
+* Splunk log search results (search.log, student.log, etc.)
+* Swagger UI (`http://localhost:<port>/swagger-ui.html`)
+* IntelliJ console output with `logger.info(...)`
+* Terminal logs directory with `.log` files present
 
-## 📌 Notes
+## 🔐 Notes
 
-* Do not run the project until the config and discovery services are running
-* Use `git clone` to download this project and `mvnw` to build and run
-* Tested on macOS with Java 11 and Maven Wrapper
+* Do not run services until `config` and `discovery` are running
+* If using IntelliJ, set working directory to each service folder
+* All logs rotate daily, keep up to 7 days of history
+* Default ports: config (8100), discovery (8761), gateway (8085), search (9001)
 

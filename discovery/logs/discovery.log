@@ -1,0 +1,409 @@
+2025-05-02 10:54:41 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a612506a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 10:54:41 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8100
+2025-05-02 10:54:41 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=discovery-service, profiles=[dev], label=null, version=bcc72c594ad2149a0093b20ff9e2a7d73dba8cd1, state=null
+2025-05-02 10:54:41 INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='file:///Users/yulin/Documents/Antra/weather-master/properties/discovery-service-dev.properties'}]}
+2025-05-02 10:54:41 INFO  c.e.d.DiscoveryServerApplication - The following profiles are active: dev
+2025-05-02 10:54:42 WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2025-05-02 10:54:42 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=e538fd92-755a-345d-a0bd-e81c5ee88d42
+2025-05-02 10:54:42 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a612506a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 10:54:42 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8761 (http)
+2025-05-02 10:54:42 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8761"]
+2025-05-02 10:54:42 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-02 10:54:42 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2025-05-02 10:54:42 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-02 10:54:42 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 435 ms
+2025-05-02 10:54:42 WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2025-05-02 10:54:42 INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-05-02 10:54:42 INFO  c.n.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@16f15ae9
+2025-05-02 10:54:42 INFO  c.s.j.s.i.a.WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2025-05-02 10:54:42 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2025-05-02 10:54:42 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2025-05-02 10:54:42 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2025-05-02 10:54:42 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2025-05-02 10:54:42 WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2025-05-02 10:54:42 INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-05-02 10:54:42 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-05-02 10:54:43 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-05-02 10:54:43 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-05-02 10:54:43 INFO  c.netflix.discovery.DiscoveryClient - Client configured to neither register nor query for data.
+2025-05-02 10:54:43 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1746208483093 with initial instances count: 0
+2025-05-02 10:54:43 INFO  c.n.e.DefaultEurekaServerContext - Initializing ...
+2025-05-02 10:54:43 INFO  c.n.eureka.cluster.PeerEurekaNodes - Adding new peer nodes [http://localhost:8761/eureka/]
+2025-05-02 10:54:43 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2025-05-02 10:54:43 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2025-05-02 10:54:43 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2025-05-02 10:54:43 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2025-05-02 10:54:43 INFO  c.n.eureka.cluster.PeerEurekaNodes - Replica node URL:  http://localhost:8761/eureka/
+2025-05-02 10:54:43 INFO  c.n.e.r.AbstractInstanceRegistry - Finished initializing remote region registries. All known remote regions: []
+2025-05-02 10:54:43 INFO  c.n.e.DefaultEurekaServerContext - Initialized
+2025-05-02 10:54:43 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoint(s) beneath base path '/actuator'
+2025-05-02 10:54:43 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application DISCOVERY-SERVICE with eureka with status UP
+2025-05-02 10:54:43 INFO  o.s.c.n.e.s.EurekaServerBootstrap - Setting the eureka configuration..
+2025-05-02 10:54:43 INFO  o.s.c.n.e.s.EurekaServerBootstrap - Eureka data center value eureka.datacenter is not set, defaulting to default
+2025-05-02 10:54:43 INFO  o.s.c.n.e.s.EurekaServerBootstrap - Eureka environment value eureka.environment is not set, defaulting to test
+2025-05-02 10:54:43 INFO  o.s.c.n.e.s.EurekaServerBootstrap - isAws returned false
+2025-05-02 10:54:43 INFO  o.s.c.n.e.s.EurekaServerBootstrap - Initialized server context
+2025-05-02 10:54:43 INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Got 1 instances from neighboring DS node
+2025-05-02 10:54:43 INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Renew threshold is: 1
+2025-05-02 10:54:43 INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Changing status to UP
+2025-05-02 10:54:43 INFO  o.s.c.n.e.s.EurekaServerInitializerConfiguration - Started Eureka Server
+2025-05-02 10:54:43 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8761"]
+2025-05-02 10:54:43 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8761 (http) with context path ''
+2025-05-02 10:54:43 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8761
+2025-05-02 10:54:43 INFO  c.e.d.DiscoveryServerApplication - Started DiscoveryServerApplication in 1.763 seconds (JVM running for 1.998)
+2025-05-02 10:54:43 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-02 10:54:43 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-02 10:54:43 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8100
+2025-05-02 10:54:43 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2025-05-02 10:54:43 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=discovery-service, profiles=[dev], label=null, version=bcc72c594ad2149a0093b20ff9e2a7d73dba8cd1, state=null
+2025-05-02 10:54:45 WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: GATEWAY - 10.0.0.98:gateway:8200
+2025-05-02 10:54:45 WARN  c.n.e.resources.InstanceResource - Not Found (Renew): GATEWAY - 10.0.0.98:gateway:8200
+2025-05-02 10:54:45 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance GATEWAY/10.0.0.98:gateway:8200 with status UP (replication=false)
+2025-05-02 10:54:45 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance GATEWAY/10.0.0.98:gateway:8200 with status UP (replication=true)
+2025-05-02 10:54:50 WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: DETAILS - 10.0.0.98:details:9400
+2025-05-02 10:54:50 WARN  c.n.e.resources.InstanceResource - Not Found (Renew): DETAILS - 10.0.0.98:details:9400
+2025-05-02 10:54:50 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance DETAILS/10.0.0.98:details:9400 with status UP (replication=false)
+2025-05-02 10:54:50 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance DETAILS/10.0.0.98:details:9400 with status UP (replication=true)
+2025-05-02 10:54:55 WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: SEARCH - 10.0.0.98:search:9001
+2025-05-02 10:54:55 WARN  c.n.e.resources.InstanceResource - Not Found (Renew): SEARCH - 10.0.0.98:search:9001
+2025-05-02 10:54:55 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance SEARCH/10.0.0.98:search:9001 with status UP (replication=false)
+2025-05-02 10:54:55 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance SEARCH/10.0.0.98:search:9001 with status UP (replication=true)
+2025-05-02 10:55:09 WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: STUDENT-MANAGEMENT-SERVICE - 10.0.0.98:student-management-service:8080
+2025-05-02 10:55:09 WARN  c.n.e.resources.InstanceResource - Not Found (Renew): STUDENT-MANAGEMENT-SERVICE - 10.0.0.98:student-management-service:8080
+2025-05-02 10:55:09 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 with status UP (replication=false)
+2025-05-02 10:55:10 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 with status UP (replication=true)
+2025-05-02 10:55:43 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2025-05-02 10:56:43 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 4ms
+2025-05-02 10:57:43 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 4ms
+2025-05-02 10:58:43 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 3ms
+2025-05-02 10:59:43 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 4ms
+2025-05-02 11:00:43 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 4ms
+2025-05-02 11:01:05 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application DISCOVERY-SERVICE with eureka with status DOWN
+2025-05-02 11:01:05 INFO  c.n.e.DefaultEurekaServerContext - Shutting down ...
+2025-05-02 11:01:05 INFO  c.n.e.DefaultEurekaServerContext - Shut down
+2025-05-02 11:01:05 INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2025-05-02 11:01:05 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-05-02 11:01:05 INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-05-02 11:01:06 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$252a8fe5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 11:01:06 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8100
+2025-05-02 11:01:06 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=discovery-service, profiles=[dev], label=null, version=bcc72c594ad2149a0093b20ff9e2a7d73dba8cd1, state=null
+2025-05-02 11:01:06 INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='file:///Users/yulin/Documents/Antra/weather-master/properties/discovery-service-dev.properties'}]}
+2025-05-02 11:01:06 INFO  c.e.d.DiscoveryServerApplication - The following profiles are active: dev
+2025-05-02 11:01:07 WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2025-05-02 11:01:07 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=e538fd92-755a-345d-a0bd-e81c5ee88d42
+2025-05-02 11:01:07 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$252a8fe5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 11:01:07 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8761 (http)
+2025-05-02 11:01:07 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8761"]
+2025-05-02 11:01:07 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-02 11:01:07 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2025-05-02 11:01:07 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-02 11:01:07 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 430 ms
+2025-05-02 11:01:07 WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2025-05-02 11:01:07 INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-05-02 11:01:07 INFO  c.n.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5d14e99e
+2025-05-02 11:01:07 INFO  c.s.j.s.i.a.WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2025-05-02 11:01:07 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2025-05-02 11:01:07 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2025-05-02 11:01:07 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2025-05-02 11:01:07 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2025-05-02 11:01:07 WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2025-05-02 11:01:07 INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-05-02 11:01:07 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-05-02 11:01:07 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-05-02 11:01:07 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-05-02 11:01:07 INFO  c.netflix.discovery.DiscoveryClient - Client configured to neither register nor query for data.
+2025-05-02 11:01:07 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1746208867980 with initial instances count: 0
+2025-05-02 11:01:07 INFO  c.n.e.DefaultEurekaServerContext - Initializing ...
+2025-05-02 11:01:07 INFO  c.n.eureka.cluster.PeerEurekaNodes - Adding new peer nodes [http://localhost:8761/eureka/]
+2025-05-02 11:01:08 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2025-05-02 11:01:08 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2025-05-02 11:01:08 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2025-05-02 11:01:08 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2025-05-02 11:01:08 INFO  c.n.eureka.cluster.PeerEurekaNodes - Replica node URL:  http://localhost:8761/eureka/
+2025-05-02 11:01:08 INFO  c.n.e.r.AbstractInstanceRegistry - Finished initializing remote region registries. All known remote regions: []
+2025-05-02 11:01:08 INFO  c.n.e.DefaultEurekaServerContext - Initialized
+2025-05-02 11:01:08 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoint(s) beneath base path '/actuator'
+2025-05-02 11:01:08 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application DISCOVERY-SERVICE with eureka with status UP
+2025-05-02 11:01:08 INFO  o.s.c.n.e.s.EurekaServerBootstrap - Setting the eureka configuration..
+2025-05-02 11:01:08 INFO  o.s.c.n.e.s.EurekaServerBootstrap - Eureka data center value eureka.datacenter is not set, defaulting to default
+2025-05-02 11:01:08 INFO  o.s.c.n.e.s.EurekaServerBootstrap - Eureka environment value eureka.environment is not set, defaulting to test
+2025-05-02 11:01:08 INFO  o.s.c.n.e.s.EurekaServerBootstrap - isAws returned false
+2025-05-02 11:01:08 INFO  o.s.c.n.e.s.EurekaServerBootstrap - Initialized server context
+2025-05-02 11:01:08 INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Got 1 instances from neighboring DS node
+2025-05-02 11:01:08 INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Renew threshold is: 1
+2025-05-02 11:01:08 INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Changing status to UP
+2025-05-02 11:01:08 INFO  o.s.c.n.e.s.EurekaServerInitializerConfiguration - Started Eureka Server
+2025-05-02 11:01:08 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8761"]
+2025-05-02 11:01:08 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8761 (http) with context path ''
+2025-05-02 11:01:08 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8761
+2025-05-02 11:01:08 INFO  c.e.d.DiscoveryServerApplication - Started DiscoveryServerApplication in 1.6 seconds (JVM running for 1.944)
+2025-05-02 11:01:08 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-02 11:01:08 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-02 11:01:08 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8100
+2025-05-02 11:01:08 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2025-05-02 11:01:08 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=discovery-service, profiles=[dev], label=null, version=bcc72c594ad2149a0093b20ff9e2a7d73dba8cd1, state=null
+2025-05-02 11:01:10 WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: STUDENT-MANAGEMENT-SERVICE - 10.0.0.98:student-management-service:8080
+2025-05-02 11:01:10 WARN  c.n.e.resources.InstanceResource - Not Found (Renew): STUDENT-MANAGEMENT-SERVICE - 10.0.0.98:student-management-service:8080
+2025-05-02 11:01:10 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 with status UP (replication=false)
+2025-05-02 11:01:10 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 with status UP (replication=true)
+2025-05-02 11:01:10 WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: DETAILS - 10.0.0.98:details:9400
+2025-05-02 11:01:10 WARN  c.n.e.resources.InstanceResource - Not Found (Renew): DETAILS - 10.0.0.98:details:9400
+2025-05-02 11:01:10 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance DETAILS/10.0.0.98:details:9400 with status UP (replication=false)
+2025-05-02 11:01:11 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance DETAILS/10.0.0.98:details:9400 with status UP (replication=true)
+2025-05-02 11:01:11 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance GATEWAY/10.0.0.98:gateway:8200 with status DOWN (replication=false)
+2025-05-02 11:01:12 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance GATEWAY/10.0.0.98:gateway:8200 with status DOWN (replication=true)
+2025-05-02 11:01:14 INFO  c.n.e.r.AbstractInstanceRegistry - Cancelled instance GATEWAY/10.0.0.98:gateway:8200 (replication=false)
+2025-05-02 11:01:15 WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: cancel failed because Lease is not registered for: GATEWAY/10.0.0.98:gateway:8200
+2025-05-02 11:01:15 INFO  c.n.e.resources.InstanceResource - Not Found (Cancel): GATEWAY - 10.0.0.98:gateway:8200
+2025-05-02 11:01:15 WARN  c.n.eureka.cluster.ReplicationTask - The replication of task GATEWAY/10.0.0.98:gateway:8200:Cancel@localhost failed with response code 404
+2025-05-02 11:01:15 WARN  c.n.eureka.cluster.PeerEurekaNode - GATEWAY/10.0.0.98:gateway:8200:Cancel@localhost: missing entry.
+2025-05-02 11:01:17 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance GATEWAY/10.0.0.98:gateway:8200 with status UP (replication=false)
+2025-05-02 11:01:17 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance GATEWAY/10.0.0.98:gateway:8200 with status UP (replication=true)
+2025-05-02 11:01:19 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance DETAILS/10.0.0.98:details:9400 with status DOWN (replication=false)
+2025-05-02 11:01:20 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance DETAILS/10.0.0.98:details:9400 with status DOWN (replication=true)
+2025-05-02 11:01:22 INFO  c.n.e.r.AbstractInstanceRegistry - Cancelled instance DETAILS/10.0.0.98:details:9400 (replication=false)
+2025-05-02 11:01:23 WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: cancel failed because Lease is not registered for: DETAILS/10.0.0.98:details:9400
+2025-05-02 11:01:23 INFO  c.n.e.resources.InstanceResource - Not Found (Cancel): DETAILS - 10.0.0.98:details:9400
+2025-05-02 11:01:23 WARN  c.n.eureka.cluster.ReplicationTask - The replication of task DETAILS/10.0.0.98:details:9400:Cancel@localhost failed with response code 404
+2025-05-02 11:01:23 WARN  c.n.eureka.cluster.PeerEurekaNode - DETAILS/10.0.0.98:details:9400:Cancel@localhost: missing entry.
+2025-05-02 11:01:25 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance DETAILS/10.0.0.98:details:9400 with status UP (replication=false)
+2025-05-02 11:01:25 WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: SEARCH - 10.0.0.98:search:9001
+2025-05-02 11:01:25 WARN  c.n.e.resources.InstanceResource - Not Found (Renew): SEARCH - 10.0.0.98:search:9001
+2025-05-02 11:01:25 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance SEARCH/10.0.0.98:search:9001 with status UP (replication=false)
+2025-05-02 11:01:25 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance DETAILS/10.0.0.98:details:9400 with status UP (replication=true)
+2025-05-02 11:01:25 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance SEARCH/10.0.0.98:search:9001 with status UP (replication=true)
+2025-05-02 11:02:08 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2025-05-02 11:03:08 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 5ms
+2025-05-02 11:04:08 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2025-05-02 11:05:08 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 3ms
+2025-05-02 11:06:08 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 2ms
+2025-05-02 11:07:08 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 3ms
+2025-05-02 11:08:08 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 5ms
+2025-05-02 11:09:06 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 with status DOWN (replication=false)
+2025-05-02 11:09:06 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 with status DOWN (replication=true)
+2025-05-02 11:09:08 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 2ms
+2025-05-02 11:09:09 INFO  c.n.e.r.AbstractInstanceRegistry - Cancelled instance STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 (replication=false)
+2025-05-02 11:09:09 WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: cancel failed because Lease is not registered for: STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080
+2025-05-02 11:09:09 INFO  c.n.e.resources.InstanceResource - Not Found (Cancel): STUDENT-MANAGEMENT-SERVICE - 10.0.0.98:student-management-service:8080
+2025-05-02 11:09:09 WARN  c.n.eureka.cluster.ReplicationTask - The replication of task STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080:Cancel@localhost failed with response code 404
+2025-05-02 11:09:09 WARN  c.n.eureka.cluster.PeerEurekaNode - STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080:Cancel@localhost: missing entry.
+2025-05-02 11:09:10 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 with status UP (replication=false)
+2025-05-02 11:09:11 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 with status UP (replication=true)
+2025-05-02 11:09:33 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application DISCOVERY-SERVICE with eureka with status DOWN
+2025-05-02 11:09:33 INFO  c.n.e.DefaultEurekaServerContext - Shutting down ...
+2025-05-02 11:09:33 INFO  c.n.e.DefaultEurekaServerContext - Shut down
+2025-05-02 11:09:33 INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2025-05-02 11:09:33 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-05-02 11:09:33 INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-05-02 11:09:34 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aa9d12f4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 11:09:34 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8100
+2025-05-02 11:09:34 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=discovery-service, profiles=[dev], label=null, version=33b2aaa106a723e7c72c302ddf690d5a8b53ea0d, state=null
+2025-05-02 11:09:34 INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='file:///Users/yulin/Documents/Antra/weather-master/properties/discovery-service-dev.properties'}]}
+2025-05-02 11:09:34 INFO  c.e.d.DiscoveryServerApplication - The following profiles are active: dev
+2025-05-02 11:09:35 WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2025-05-02 11:09:35 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=e538fd92-755a-345d-a0bd-e81c5ee88d42
+2025-05-02 11:09:35 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aa9d12f4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 11:09:35 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8761 (http)
+2025-05-02 11:09:35 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8761"]
+2025-05-02 11:09:35 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-02 11:09:35 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2025-05-02 11:09:35 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-02 11:09:35 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 440 ms
+2025-05-02 11:09:35 WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2025-05-02 11:09:35 INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-05-02 11:09:35 INFO  c.n.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@787178b1
+2025-05-02 11:09:35 INFO  c.s.j.s.i.a.WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2025-05-02 11:09:35 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2025-05-02 11:09:35 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2025-05-02 11:09:35 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2025-05-02 11:09:35 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2025-05-02 11:09:35 WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2025-05-02 11:09:35 INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-05-02 11:09:35 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-05-02 11:09:35 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-05-02 11:09:35 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-05-02 11:09:35 INFO  c.netflix.discovery.DiscoveryClient - Client configured to neither register nor query for data.
+2025-05-02 11:09:35 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1746209375929 with initial instances count: 0
+2025-05-02 11:09:35 INFO  c.n.e.DefaultEurekaServerContext - Initializing ...
+2025-05-02 11:09:35 INFO  c.n.eureka.cluster.PeerEurekaNodes - Adding new peer nodes [http://localhost:8761/eureka/]
+2025-05-02 11:09:35 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2025-05-02 11:09:35 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2025-05-02 11:09:35 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2025-05-02 11:09:35 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2025-05-02 11:09:36 INFO  c.n.eureka.cluster.PeerEurekaNodes - Replica node URL:  http://localhost:8761/eureka/
+2025-05-02 11:09:36 INFO  c.n.e.r.AbstractInstanceRegistry - Finished initializing remote region registries. All known remote regions: []
+2025-05-02 11:09:36 INFO  c.n.e.DefaultEurekaServerContext - Initialized
+2025-05-02 11:09:36 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoint(s) beneath base path '/actuator'
+2025-05-02 11:09:36 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application DISCOVERY-SERVICE with eureka with status UP
+2025-05-02 11:09:36 INFO  o.s.c.n.e.s.EurekaServerBootstrap - Setting the eureka configuration..
+2025-05-02 11:09:36 INFO  o.s.c.n.e.s.EurekaServerBootstrap - Eureka data center value eureka.datacenter is not set, defaulting to default
+2025-05-02 11:09:36 INFO  o.s.c.n.e.s.EurekaServerBootstrap - Eureka environment value eureka.environment is not set, defaulting to test
+2025-05-02 11:09:36 INFO  o.s.c.n.e.s.EurekaServerBootstrap - isAws returned false
+2025-05-02 11:09:36 INFO  o.s.c.n.e.s.EurekaServerBootstrap - Initialized server context
+2025-05-02 11:09:36 INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Got 1 instances from neighboring DS node
+2025-05-02 11:09:36 INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Renew threshold is: 1
+2025-05-02 11:09:36 INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Changing status to UP
+2025-05-02 11:09:36 INFO  o.s.c.n.e.s.EurekaServerInitializerConfiguration - Started Eureka Server
+2025-05-02 11:09:36 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8761"]
+2025-05-02 11:09:36 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8761 (http) with context path ''
+2025-05-02 11:09:36 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8761
+2025-05-02 11:09:36 INFO  c.e.d.DiscoveryServerApplication - Started DiscoveryServerApplication in 1.619 seconds (JVM running for 1.915)
+2025-05-02 11:09:36 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-02 11:09:36 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-02 11:09:36 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8100
+2025-05-02 11:09:36 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-05-02 11:09:36 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=discovery-service, profiles=[dev], label=null, version=33b2aaa106a723e7c72c302ddf690d5a8b53ea0d, state=null
+2025-05-02 11:09:37 WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: GATEWAY - 10.0.0.98:gateway:8200
+2025-05-02 11:09:37 WARN  c.n.e.resources.InstanceResource - Not Found (Renew): GATEWAY - 10.0.0.98:gateway:8200
+2025-05-02 11:09:37 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance GATEWAY/10.0.0.98:gateway:8200 with status UP (replication=false)
+2025-05-02 11:09:38 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance GATEWAY/10.0.0.98:gateway:8200 with status UP (replication=true)
+2025-05-02 11:09:40 WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: STUDENT-MANAGEMENT-SERVICE - 10.0.0.98:student-management-service:8080
+2025-05-02 11:09:40 WARN  c.n.e.resources.InstanceResource - Not Found (Renew): STUDENT-MANAGEMENT-SERVICE - 10.0.0.98:student-management-service:8080
+2025-05-02 11:09:40 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 with status UP (replication=false)
+2025-05-02 11:09:41 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 with status UP (replication=true)
+2025-05-02 11:09:45 WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: DETAILS - 10.0.0.98:details:9400
+2025-05-02 11:09:45 WARN  c.n.e.resources.InstanceResource - Not Found (Renew): DETAILS - 10.0.0.98:details:9400
+2025-05-02 11:09:45 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance DETAILS/10.0.0.98:details:9400 with status UP (replication=false)
+2025-05-02 11:09:46 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance DETAILS/10.0.0.98:details:9400 with status UP (replication=true)
+2025-05-02 11:09:55 WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: SEARCH - 10.0.0.98:search:9001
+2025-05-02 11:09:55 WARN  c.n.e.resources.InstanceResource - Not Found (Renew): SEARCH - 10.0.0.98:search:9001
+2025-05-02 11:09:55 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance SEARCH/10.0.0.98:search:9001 with status UP (replication=false)
+2025-05-02 11:09:56 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance SEARCH/10.0.0.98:search:9001 with status UP (replication=true)
+2025-05-02 11:10:30 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 with status DOWN (replication=false)
+2025-05-02 11:10:31 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 with status DOWN (replication=true)
+2025-05-02 11:10:33 INFO  c.n.e.r.AbstractInstanceRegistry - Cancelled instance STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 (replication=false)
+2025-05-02 11:10:34 WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: cancel failed because Lease is not registered for: STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080
+2025-05-02 11:10:34 INFO  c.n.e.resources.InstanceResource - Not Found (Cancel): STUDENT-MANAGEMENT-SERVICE - 10.0.0.98:student-management-service:8080
+2025-05-02 11:10:34 WARN  c.n.eureka.cluster.ReplicationTask - The replication of task STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080:Cancel@localhost failed with response code 404
+2025-05-02 11:10:34 WARN  c.n.eureka.cluster.PeerEurekaNode - STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080:Cancel@localhost: missing entry.
+2025-05-02 11:10:34 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 with status UP (replication=false)
+2025-05-02 11:10:35 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 with status UP (replication=true)
+2025-05-02 11:10:36 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2025-05-02 11:11:36 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 4ms
+2025-05-02 11:12:11 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application DISCOVERY-SERVICE with eureka with status DOWN
+2025-05-02 11:12:11 INFO  c.n.e.DefaultEurekaServerContext - Shutting down ...
+2025-05-02 11:12:11 INFO  c.n.e.DefaultEurekaServerContext - Shut down
+2025-05-02 11:12:11 INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2025-05-02 11:12:11 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-05-02 11:12:11 INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-05-02 11:12:14 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d8f5c56b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 11:12:14 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8100
+2025-05-02 11:12:14 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=discovery-service, profiles=[dev], label=null, version=33b2aaa106a723e7c72c302ddf690d5a8b53ea0d, state=null
+2025-05-02 11:12:14 INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='file:///Users/yulin/Documents/Antra/weather-master/properties/discovery-service-dev.properties'}]}
+2025-05-02 11:12:14 INFO  c.e.d.DiscoveryServerApplication - The following profiles are active: dev
+2025-05-02 11:12:14 WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2025-05-02 11:12:14 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=e538fd92-755a-345d-a0bd-e81c5ee88d42
+2025-05-02 11:12:14 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d8f5c56b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 11:12:14 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8761 (http)
+2025-05-02 11:12:14 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8761"]
+2025-05-02 11:12:14 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-02 11:12:14 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2025-05-02 11:12:14 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-02 11:12:14 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 449 ms
+2025-05-02 11:12:14 WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2025-05-02 11:12:14 INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-05-02 11:12:14 INFO  c.n.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@70f148dc
+2025-05-02 11:12:14 INFO  c.s.j.s.i.a.WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2025-05-02 11:12:14 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2025-05-02 11:12:14 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2025-05-02 11:12:14 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2025-05-02 11:12:14 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2025-05-02 11:12:15 WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2025-05-02 11:12:15 INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-05-02 11:12:15 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-05-02 11:12:15 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-05-02 11:12:15 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-05-02 11:12:15 INFO  c.netflix.discovery.DiscoveryClient - Client configured to neither register nor query for data.
+2025-05-02 11:12:15 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1746209535273 with initial instances count: 0
+2025-05-02 11:12:15 INFO  c.n.e.DefaultEurekaServerContext - Initializing ...
+2025-05-02 11:12:15 INFO  c.n.eureka.cluster.PeerEurekaNodes - Adding new peer nodes [http://localhost:8761/eureka/]
+2025-05-02 11:12:15 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2025-05-02 11:12:15 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2025-05-02 11:12:15 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2025-05-02 11:12:15 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2025-05-02 11:12:15 INFO  c.n.eureka.cluster.PeerEurekaNodes - Replica node URL:  http://localhost:8761/eureka/
+2025-05-02 11:12:15 INFO  c.n.e.r.AbstractInstanceRegistry - Finished initializing remote region registries. All known remote regions: []
+2025-05-02 11:12:15 INFO  c.n.e.DefaultEurekaServerContext - Initialized
+2025-05-02 11:12:15 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoint(s) beneath base path '/actuator'
+2025-05-02 11:12:15 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application DISCOVERY-SERVICE with eureka with status UP
+2025-05-02 11:12:15 INFO  o.s.c.n.e.s.EurekaServerBootstrap - Setting the eureka configuration..
+2025-05-02 11:12:15 INFO  o.s.c.n.e.s.EurekaServerBootstrap - Eureka data center value eureka.datacenter is not set, defaulting to default
+2025-05-02 11:12:15 INFO  o.s.c.n.e.s.EurekaServerBootstrap - Eureka environment value eureka.environment is not set, defaulting to test
+2025-05-02 11:12:15 INFO  o.s.c.n.e.s.EurekaServerBootstrap - isAws returned false
+2025-05-02 11:12:15 INFO  o.s.c.n.e.s.EurekaServerBootstrap - Initialized server context
+2025-05-02 11:12:15 INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Got 1 instances from neighboring DS node
+2025-05-02 11:12:15 INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Renew threshold is: 1
+2025-05-02 11:12:15 INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Changing status to UP
+2025-05-02 11:12:15 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8761"]
+2025-05-02 11:12:15 INFO  o.s.c.n.e.s.EurekaServerInitializerConfiguration - Started Eureka Server
+2025-05-02 11:12:15 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8761 (http) with context path ''
+2025-05-02 11:12:15 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8761
+2025-05-02 11:12:15 INFO  c.e.d.DiscoveryServerApplication - Started DiscoveryServerApplication in 1.621 seconds (JVM running for 1.856)
+2025-05-02 11:12:15 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-02 11:12:15 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-02 11:12:15 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8100
+2025-05-02 11:12:15 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-05-02 11:12:15 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=discovery-service, profiles=[dev], label=null, version=33b2aaa106a723e7c72c302ddf690d5a8b53ea0d, state=null
+2025-05-02 11:12:16 WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: DETAILS - 10.0.0.98:details:9400
+2025-05-02 11:12:16 WARN  c.n.e.resources.InstanceResource - Not Found (Renew): DETAILS - 10.0.0.98:details:9400
+2025-05-02 11:12:16 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance DETAILS/10.0.0.98:details:9400 with status UP (replication=false)
+2025-05-02 11:12:16 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance DETAILS/10.0.0.98:details:9400 with status UP (replication=true)
+2025-05-02 11:12:17 WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: GATEWAY - 10.0.0.98:gateway:8200
+2025-05-02 11:12:17 WARN  c.n.e.resources.InstanceResource - Not Found (Renew): GATEWAY - 10.0.0.98:gateway:8200
+2025-05-02 11:12:17 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance GATEWAY/10.0.0.98:gateway:8200 with status UP (replication=false)
+2025-05-02 11:12:18 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance GATEWAY/10.0.0.98:gateway:8200 with status UP (replication=true)
+2025-05-02 11:12:21 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance GATEWAY/10.0.0.98:gateway:8200 with status DOWN (replication=false)
+2025-05-02 11:12:21 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance GATEWAY/10.0.0.98:gateway:8200 with status DOWN (replication=true)
+2025-05-02 11:12:24 INFO  c.n.e.r.AbstractInstanceRegistry - Cancelled instance GATEWAY/10.0.0.98:gateway:8200 (replication=false)
+2025-05-02 11:12:24 WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: cancel failed because Lease is not registered for: GATEWAY/10.0.0.98:gateway:8200
+2025-05-02 11:12:24 INFO  c.n.e.resources.InstanceResource - Not Found (Cancel): GATEWAY - 10.0.0.98:gateway:8200
+2025-05-02 11:12:24 WARN  c.n.eureka.cluster.ReplicationTask - The replication of task GATEWAY/10.0.0.98:gateway:8200:Cancel@localhost failed with response code 404
+2025-05-02 11:12:24 WARN  c.n.eureka.cluster.PeerEurekaNode - GATEWAY/10.0.0.98:gateway:8200:Cancel@localhost: missing entry.
+2025-05-02 11:12:26 WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: SEARCH - 10.0.0.98:search:9001
+2025-05-02 11:12:26 WARN  c.n.e.resources.InstanceResource - Not Found (Renew): SEARCH - 10.0.0.98:search:9001
+2025-05-02 11:12:26 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance SEARCH/10.0.0.98:search:9001 with status UP (replication=false)
+2025-05-02 11:12:26 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance SEARCH/10.0.0.98:search:9001 with status UP (replication=true)
+2025-05-02 11:12:26 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance GATEWAY/10.0.0.98:gateway:8200 with status UP (replication=false)
+2025-05-02 11:12:27 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance GATEWAY/10.0.0.98:gateway:8200 with status UP (replication=true)
+2025-05-02 11:12:30 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance SEARCH/10.0.0.98:search:9001 with status DOWN (replication=false)
+2025-05-02 11:12:30 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance SEARCH/10.0.0.98:search:9001 with status DOWN (replication=true)
+2025-05-02 11:12:33 INFO  c.n.e.r.AbstractInstanceRegistry - Cancelled instance SEARCH/10.0.0.98:search:9001 (replication=false)
+2025-05-02 11:12:33 WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: cancel failed because Lease is not registered for: SEARCH/10.0.0.98:search:9001
+2025-05-02 11:12:33 INFO  c.n.e.resources.InstanceResource - Not Found (Cancel): SEARCH - 10.0.0.98:search:9001
+2025-05-02 11:12:33 WARN  c.n.eureka.cluster.ReplicationTask - The replication of task SEARCH/10.0.0.98:search:9001:Cancel@localhost failed with response code 404
+2025-05-02 11:12:33 WARN  c.n.eureka.cluster.PeerEurekaNode - SEARCH/10.0.0.98:search:9001:Cancel@localhost: missing entry.
+2025-05-02 11:12:34 WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: STUDENT-MANAGEMENT-SERVICE - 10.0.0.98:student-management-service:8080
+2025-05-02 11:12:34 WARN  c.n.e.resources.InstanceResource - Not Found (Renew): STUDENT-MANAGEMENT-SERVICE - 10.0.0.98:student-management-service:8080
+2025-05-02 11:12:34 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 with status UP (replication=false)
+2025-05-02 11:12:35 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 with status UP (replication=true)
+2025-05-02 11:12:36 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance SEARCH/10.0.0.98:search:9001 with status UP (replication=false)
+2025-05-02 11:12:36 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance SEARCH/10.0.0.98:search:9001 with status UP (replication=true)
+2025-05-02 11:12:38 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance DETAILS/10.0.0.98:details:9400 with status DOWN (replication=false)
+2025-05-02 11:12:39 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance DETAILS/10.0.0.98:details:9400 with status DOWN (replication=true)
+2025-05-02 11:12:41 INFO  c.n.e.r.AbstractInstanceRegistry - Cancelled instance DETAILS/10.0.0.98:details:9400 (replication=false)
+2025-05-02 11:12:42 WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: cancel failed because Lease is not registered for: DETAILS/10.0.0.98:details:9400
+2025-05-02 11:12:42 INFO  c.n.e.resources.InstanceResource - Not Found (Cancel): DETAILS - 10.0.0.98:details:9400
+2025-05-02 11:12:42 WARN  c.n.eureka.cluster.ReplicationTask - The replication of task DETAILS/10.0.0.98:details:9400:Cancel@localhost failed with response code 404
+2025-05-02 11:12:42 WARN  c.n.eureka.cluster.PeerEurekaNode - DETAILS/10.0.0.98:details:9400:Cancel@localhost: missing entry.
+2025-05-02 11:12:44 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance DETAILS/10.0.0.98:details:9400 with status UP (replication=false)
+2025-05-02 11:12:45 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance DETAILS/10.0.0.98:details:9400 with status UP (replication=true)
+2025-05-02 11:12:47 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 with status DOWN (replication=false)
+2025-05-02 11:12:47 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 with status DOWN (replication=true)
+2025-05-02 11:12:50 INFO  c.n.e.r.AbstractInstanceRegistry - Cancelled instance STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 (replication=false)
+2025-05-02 11:12:50 WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: cancel failed because Lease is not registered for: STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080
+2025-05-02 11:12:50 INFO  c.n.e.resources.InstanceResource - Not Found (Cancel): STUDENT-MANAGEMENT-SERVICE - 10.0.0.98:student-management-service:8080
+2025-05-02 11:12:50 WARN  c.n.eureka.cluster.ReplicationTask - The replication of task STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080:Cancel@localhost failed with response code 404
+2025-05-02 11:12:50 WARN  c.n.eureka.cluster.PeerEurekaNode - STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080:Cancel@localhost: missing entry.
+2025-05-02 11:12:54 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 with status UP (replication=false)
+2025-05-02 11:12:55 INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 with status UP (replication=true)
+2025-05-02 11:13:15 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2025-05-02 11:14:15 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 2ms
+2025-05-02 11:15:15 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 3ms
+2025-05-02 11:16:15 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2025-05-02 11:17:15 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 5ms
+2025-05-02 11:18:15 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 4ms
+2025-05-02 11:19:15 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 4ms
+2025-05-02 11:20:15 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 3ms
+2025-05-02 11:21:15 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2025-05-02 11:22:15 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 4ms
+2025-05-02 11:23:15 INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms

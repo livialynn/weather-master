@@ -1,0 +1,18 @@
+server:
+  port: 8200
+
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      routes:
+        - id: student-service
+          uri: http://localhost:8080
+          predicates:
+            - Path=/students/**
+
+        - id: search-service
+          uri: http://localhost:9001
+          predicates:
+            - Path=/weather/search/**

@@ -1,0 +1,895 @@
+2025-05-02 10:42:57 DEBUG o.s.b.c.l.ClasspathLoggingApplicationListener - Application started with classpath: [file:/Users/yulin/Documents/Antra/weather-master/student-management-service/target/classes/]
+2025-05-02 10:42:57 DEBUG o.s.boot.SpringApplication - Loading source class org.springframework.cloud.bootstrap.BootstrapImportSelectorConfiguration
+2025-05-02 10:42:57 DEBUG o.s.b.c.c.ConfigFileApplicationListener - Loaded config file 'file:/Users/yulin/Documents/Antra/weather-master/student-management-service/target/classes/bootstrap.properties' (classpath:/bootstrap.properties)
+2025-05-02 10:42:57 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 10:42:57 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2ad67492] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 10:42:57 DEBUG o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+
+============================
+CONDITIONS EVALUATION REPORT
+============================
+
+
+Positive matches:
+-----------------
+
+   AopAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.context.annotation.EnableAspectJAutoProxy', 'org.aspectj.lang.annotation.Aspect', 'org.aspectj.lang.reflect.Advice', 'org.aspectj.weaver.AnnotatedElement' (OnClassCondition)
+      - @ConditionalOnProperty (spring.aop.auto=true) matched (OnPropertyCondition)
+
+   AopAutoConfiguration.CglibAutoProxyConfiguration matched:
+      - @ConditionalOnProperty (spring.aop.proxy-target-class=true) matched (OnPropertyCondition)
+
+   ConfigServiceBootstrapConfiguration#configServicePropertySource matched:
+      - @ConditionalOnProperty (spring.cloud.config.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.config.client.ConfigServicePropertySourceLocator; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ConfigServiceBootstrapConfiguration.RetryConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.retry.annotation.Retryable', 'org.aspectj.lang.annotation.Aspect', 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration' (OnClassCondition)
+      - @ConditionalOnProperty (spring.cloud.config.fail-fast) matched (OnPropertyCondition)
+
+   ConfigServiceBootstrapConfiguration.RetryConfiguration#configServerRetryInterceptor matched:
+      - @ConditionalOnMissingBean (names: configServerRetryInterceptor; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ConfigurationPropertiesRebinderAutoConfiguration matched:
+      - @ConditionalOnBean (types: org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor; SearchStrategy: all) found bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor' (OnBeanCondition)
+
+   ConfigurationPropertiesRebinderAutoConfiguration#configurationPropertiesBeans matched:
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.context.properties.ConfigurationPropertiesBeans; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ConfigurationPropertiesRebinderAutoConfiguration#configurationPropertiesRebinder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.context.properties.ConfigurationPropertiesRebinder; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   EncryptionBootstrapConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.crypto.encrypt.TextEncryptor' (OnClassCondition)
+
+   PropertyPlaceholderAutoConfiguration#propertySourcesPlaceholderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.context.support.PropertySourcesPlaceholderConfigurer; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   AopAutoConfiguration.JdkDynamicAutoProxyConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.aop.proxy-target-class=false) did not find property 'proxy-target-class' (OnPropertyCondition)
+
+   DiscoveryClientConfigServiceBootstrapConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.cloud.config.discovery.enabled) did not find property 'spring.cloud.config.discovery.enabled' (OnPropertyCondition)
+
+   EncryptionBootstrapConfiguration.RsaEncryptionConfiguration:
+      Did not match:
+         - Keystore nor key found in Environment (EncryptionBootstrapConfiguration.KeyCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.rsa.crypto.RsaSecretEncryptor' (OnClassCondition)
+
+   EncryptionBootstrapConfiguration.VanillaEncryptionConfiguration:
+      Did not match:
+         - @ConditionalOnMissingClass found unwanted class 'org.springframework.security.rsa.crypto.RsaSecretEncryptor' (OnClassCondition)
+
+   EurekaDiscoveryClientConfigServiceBootstrapConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.cloud.config.discovery.enabled) did not find property 'spring.cloud.config.discovery.enabled' (OnPropertyCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.cloud.config.client.ConfigServicePropertySourceLocator' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2025-05-02 10:42:57 DEBUG o.s.b.c.l.ClasspathLoggingApplicationListener - Application started with classpath: [file:/Users/yulin/Documents/Antra/weather-master/student-management-service/target/classes/]
+2025-05-02 10:42:57 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8100
+2025-05-02 10:42:57 DEBUG o.s.web.client.RestTemplate - HTTP GET http://localhost:8100/student-management-service/default
+2025-05-02 10:42:57 DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-05-02 10:42:57 DEBUG o.s.web.client.RestTemplate - Response 200 OK
+2025-05-02 10:42:57 DEBUG o.s.web.client.RestTemplate - Reading to [org.springframework.cloud.config.environment.Environment]
+2025-05-02 10:42:57 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=student-management-service, profiles=[default], label=null, version=439f4f2d981ae3bfb1d780640bb80a438488bd7a, state=null
+2025-05-02 10:42:57 INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='file:///Users/yulin/Documents/Antra/weather-master/properties/student-management-service.properties'}]}
+2025-05-02 10:42:57 INFO  c.a.s.StudentManagementServiceApplication - No active profile set, falling back to default profiles: default
+2025-05-02 10:42:57 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2025-05-02 10:42:57 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3ms. Found 1 repository interfaces.
+2025-05-02 10:42:58 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=a9217e0c-504b-3276-a72e-300de01beede
+2025-05-02 10:42:58 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$b3543694] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 10:42:58 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-05-02 10:42:58 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ebc7195] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 10:42:58 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$8e3cbec7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 10:42:58 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2ad67492] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 10:42:58 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-05-02 10:42:58 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-02 10:42:58 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2025-05-02 10:42:58 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-02 10:42:58 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 282 ms
+2025-05-02 10:42:58 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-05-02 10:42:58 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-05-02 10:42:58 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2025-05-02 10:42:58 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2025-05-02 10:42:58 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-02 10:42:58 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-02 10:42:58 WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2025-05-02 10:42:58 INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-05-02 10:42:58 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-05-02 10:42:58 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-02 10:42:58 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoint(s) beneath base path '/actuator'
+2025-05-02 10:42:58 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-05-02 10:42:58 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-05-02 10:42:58 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2025-05-02 10:42:58 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2025-05-02 10:42:58 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2025-05-02 10:42:58 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2025-05-02 10:42:58 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-02 10:42:58 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-05-02 10:42:58 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-05-02 10:42:58 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-05-02 10:42:58 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-05-02 10:42:58 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-05-02 10:42:58 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-05-02 10:42:58 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-05-02 10:42:58 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-05-02 10:42:58 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-05-02 10:42:58 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-02 10:42:58 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1746207778611 with initial instances count: 4
+2025-05-02 10:42:58 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application STUDENT-MANAGEMENT-SERVICE with eureka with status UP
+2025-05-02 10:42:58 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746207778612, current=UP, previous=STARTING]
+2025-05-02 10:42:58 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080: registering service...
+2025-05-02 10:42:58 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 - registration status: 204
+2025-05-02 10:42:58 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-05-02 10:42:58 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8080
+2025-05-02 10:42:58 INFO  c.a.s.StudentManagementServiceApplication - Started StudentManagementServiceApplication in 1.026 seconds (JVM running for 85.854)
+2025-05-02 10:42:58 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-05-02 10:42:58 INFO  c.a.s.StudentManagementServiceApplication - ✅ Student Management Service started and logging is working!
+2025-05-02 10:43:02 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application STUDENT-MANAGEMENT-SERVICE with eureka with status DOWN
+2025-05-02 10:43:02 WARN  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746207782492, current=DOWN, previous=UP]
+2025-05-02 10:43:02 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080: registering service...
+2025-05-02 10:43:02 INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2025-05-02 10:43:02 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-02 10:43:02 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 - registration status: 204
+2025-05-02 10:43:02 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-05-02 10:43:05 INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2025-05-02 10:43:05 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 - deregister  status: 200
+2025-05-02 10:43:05 INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-05-02 10:43:05 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-05-02 10:43:05 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-05-02 10:43:06 DEBUG o.s.b.c.l.ClasspathLoggingApplicationListener - Application started with classpath: [file:/Users/yulin/Documents/Antra/weather-master/student-management-service/target/classes/]
+2025-05-02 10:43:06 DEBUG o.s.boot.SpringApplication - Loading source class org.springframework.cloud.bootstrap.BootstrapImportSelectorConfiguration
+2025-05-02 10:43:06 DEBUG o.s.b.c.c.ConfigFileApplicationListener - Loaded config file 'file:/Users/yulin/Documents/Antra/weather-master/student-management-service/target/classes/bootstrap.properties' (classpath:/bootstrap.properties)
+2025-05-02 10:43:06 DEBUG o.s.b.d.restart.ChangeableUrls - Matching URLs for reloading : [file:/Users/yulin/Documents/Antra/weather-master/student-management-service/target/classes/]
+2025-05-02 10:43:06 DEBUG o.s.b.d.settings.DevToolsSettings - Included patterns for restart : []
+2025-05-02 10:43:06 DEBUG o.s.b.d.settings.DevToolsSettings - Excluded patterns for restart : [/spring-boot-starter-[\w-]+/, /spring-boot/target/classes/, /spring-boot-starter/target/classes/, /spring-boot-devtools/target/classes/, /spring-boot-actuator/target/classes/, /spring-boot-autoconfigure/target/classes/]
+2025-05-02 10:43:06 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-02 10:43:06 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 10:43:06 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$698144b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 10:43:06 DEBUG o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+
+============================
+CONDITIONS EVALUATION REPORT
+============================
+
+
+Positive matches:
+-----------------
+
+   AopAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.context.annotation.EnableAspectJAutoProxy', 'org.aspectj.lang.annotation.Aspect', 'org.aspectj.lang.reflect.Advice', 'org.aspectj.weaver.AnnotatedElement' (OnClassCondition)
+      - @ConditionalOnProperty (spring.aop.auto=true) matched (OnPropertyCondition)
+
+   AopAutoConfiguration.CglibAutoProxyConfiguration matched:
+      - @ConditionalOnProperty (spring.aop.proxy-target-class=true) matched (OnPropertyCondition)
+
+   ConfigServiceBootstrapConfiguration#configServicePropertySource matched:
+      - @ConditionalOnProperty (spring.cloud.config.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.config.client.ConfigServicePropertySourceLocator; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ConfigServiceBootstrapConfiguration.RetryConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.retry.annotation.Retryable', 'org.aspectj.lang.annotation.Aspect', 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration' (OnClassCondition)
+      - @ConditionalOnProperty (spring.cloud.config.fail-fast) matched (OnPropertyCondition)
+
+   ConfigServiceBootstrapConfiguration.RetryConfiguration#configServerRetryInterceptor matched:
+      - @ConditionalOnMissingBean (names: configServerRetryInterceptor; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ConfigurationPropertiesRebinderAutoConfiguration matched:
+      - @ConditionalOnBean (types: org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor; SearchStrategy: all) found bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor' (OnBeanCondition)
+
+   ConfigurationPropertiesRebinderAutoConfiguration#configurationPropertiesBeans matched:
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.context.properties.ConfigurationPropertiesBeans; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ConfigurationPropertiesRebinderAutoConfiguration#configurationPropertiesRebinder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.context.properties.ConfigurationPropertiesRebinder; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   EncryptionBootstrapConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.crypto.encrypt.TextEncryptor' (OnClassCondition)
+
+   PropertyPlaceholderAutoConfiguration#propertySourcesPlaceholderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.context.support.PropertySourcesPlaceholderConfigurer; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   AopAutoConfiguration.JdkDynamicAutoProxyConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.aop.proxy-target-class=false) did not find property 'proxy-target-class' (OnPropertyCondition)
+
+   DiscoveryClientConfigServiceBootstrapConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.cloud.config.discovery.enabled) did not find property 'spring.cloud.config.discovery.enabled' (OnPropertyCondition)
+
+   EncryptionBootstrapConfiguration.RsaEncryptionConfiguration:
+      Did not match:
+         - Keystore nor key found in Environment (EncryptionBootstrapConfiguration.KeyCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.rsa.crypto.RsaSecretEncryptor' (OnClassCondition)
+
+   EncryptionBootstrapConfiguration.VanillaEncryptionConfiguration:
+      Did not match:
+         - @ConditionalOnMissingClass found unwanted class 'org.springframework.security.rsa.crypto.RsaSecretEncryptor' (OnClassCondition)
+
+   EurekaDiscoveryClientConfigServiceBootstrapConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.cloud.config.discovery.enabled) did not find property 'spring.cloud.config.discovery.enabled' (OnPropertyCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.cloud.config.client.ConfigServicePropertySourceLocator' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2025-05-02 10:43:06 DEBUG o.s.boot.devtools.restart.Restarter - Creating new Restarter for thread Thread[main,5,main]
+2025-05-02 10:43:06 DEBUG o.s.boot.devtools.restart.Restarter - Immediately restarting application
+2025-05-02 10:43:06 DEBUG o.s.boot.devtools.restart.Restarter - Created RestartClassLoader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@8b477e2
+2025-05-02 10:43:06 DEBUG o.s.boot.devtools.restart.Restarter - Starting application com.antra.studentmanagement.StudentManagementServiceApplication with URLs [file:/Users/yulin/Documents/Antra/weather-master/student-management-service/target/classes/]
+2025-05-02 10:43:06 DEBUG o.s.b.c.l.ClasspathLoggingApplicationListener - Application started with classpath: [file:/Users/yulin/Documents/Antra/weather-master/student-management-service/target/classes/]
+2025-05-02 10:43:06 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8100
+2025-05-02 10:43:06 DEBUG o.s.web.client.RestTemplate - HTTP GET http://localhost:8100/student-management-service/default
+2025-05-02 10:43:07 DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-05-02 10:43:07 DEBUG o.s.web.client.RestTemplate - Response 200 OK
+2025-05-02 10:43:07 DEBUG o.s.web.client.RestTemplate - Reading to [org.springframework.cloud.config.environment.Environment]
+2025-05-02 10:43:07 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=student-management-service, profiles=[default], label=null, version=439f4f2d981ae3bfb1d780640bb80a438488bd7a, state=null
+2025-05-02 10:43:07 INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='file:///Users/yulin/Documents/Antra/weather-master/properties/student-management-service.properties'}]}
+2025-05-02 10:43:07 INFO  c.a.s.StudentManagementServiceApplication - No active profile set, falling back to default profiles: default
+2025-05-02 10:43:07 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2025-05-02 10:43:07 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16ms. Found 1 repository interfaces.
+2025-05-02 10:43:07 WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2025-05-02 10:43:07 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=a9217e0c-504b-3276-a72e-300de01beede
+2025-05-02 10:43:07 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8f15d64d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 10:43:07 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-05-02 10:43:07 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ea7e114e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 10:43:07 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$69fe5e80] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 10:43:07 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$698144b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 10:43:07 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-05-02 10:43:07 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-02 10:43:07 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-02 10:43:07 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2025-05-02 10:43:07 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-02 10:43:07 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 776 ms
+2025-05-02 10:43:07 WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2025-05-02 10:43:07 INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-05-02 10:43:07 INFO  c.n.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7d43799b
+2025-05-02 10:43:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-02 10:43:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-02 10:43:08 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2025-05-02 10:43:08 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2025-05-02 10:43:08 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2025-05-02 10:43:08 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2025-05-02 10:43:08 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2025-05-02 10:43:08 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-02 10:43:08 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-02 10:43:08 WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2025-05-02 10:43:08 INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-05-02 10:43:08 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-05-02 10:43:08 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-02 10:43:09 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoint(s) beneath base path '/actuator'
+2025-05-02 10:43:09 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-05-02 10:43:09 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-05-02 10:43:09 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2025-05-02 10:43:09 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2025-05-02 10:43:09 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2025-05-02 10:43:09 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2025-05-02 10:43:09 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-02 10:43:09 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-05-02 10:43:09 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-05-02 10:43:09 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-05-02 10:43:09 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-05-02 10:43:09 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-05-02 10:43:09 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-05-02 10:43:09 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-05-02 10:43:09 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-05-02 10:43:09 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-05-02 10:43:09 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-02 10:43:09 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1746207789637 with initial instances count: 4
+2025-05-02 10:43:09 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application STUDENT-MANAGEMENT-SERVICE with eureka with status UP
+2025-05-02 10:43:09 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746207789639, current=UP, previous=STARTING]
+2025-05-02 10:43:09 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080: registering service...
+2025-05-02 10:43:09 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-02 10:43:09 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 - registration status: 204
+2025-05-02 10:43:09 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-05-02 10:43:09 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8080
+2025-05-02 10:43:09 INFO  c.a.s.StudentManagementServiceApplication - Started StudentManagementServiceApplication in 2.996 seconds (JVM running for 3.414)
+2025-05-02 10:43:09 INFO  c.a.s.StudentManagementServiceApplication - ✅ Student Management Service started and logging is working!
+2025-05-02 10:43:10 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-02 10:43:10 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-02 10:43:10 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8100
+2025-05-02 10:43:10 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2025-05-02 10:43:10 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=student-management-service, profiles=[default], label=null, version=439f4f2d981ae3bfb1d780640bb80a438488bd7a, state=null
+2025-05-02 10:48:09 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-02 10:52:39 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 - Re-registering apps/STUDENT-MANAGEMENT-SERVICE
+2025-05-02 10:52:39 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080: registering service...
+2025-05-02 10:52:39 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 - registration status: 204
+2025-05-02 10:53:09 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-02 10:55:09 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 - Re-registering apps/STUDENT-MANAGEMENT-SERVICE
+2025-05-02 10:55:09 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080: registering service...
+2025-05-02 10:55:09 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 - registration status: 204
+2025-05-02 10:58:09 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-02 11:01:10 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 - Re-registering apps/STUDENT-MANAGEMENT-SERVICE
+2025-05-02 11:01:10 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080: registering service...
+2025-05-02 11:01:10 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 - registration status: 204
+2025-05-02 11:01:40 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-05-02 11:01:40 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-05-02 11:01:40 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-05-02 11:01:40 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-05-02 11:01:40 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-05-02 11:01:40 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2025-05-02 11:01:40 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-05-02 11:01:40 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-05-02 11:03:09 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-02 11:08:09 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-02 11:09:06 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application STUDENT-MANAGEMENT-SERVICE with eureka with status DOWN
+2025-05-02 11:09:06 WARN  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746209346443, current=DOWN, previous=UP]
+2025-05-02 11:09:06 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080: registering service...
+2025-05-02 11:09:06 INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2025-05-02 11:09:06 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 - registration status: 204
+2025-05-02 11:09:06 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-02 11:09:06 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-05-02 11:09:09 INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2025-05-02 11:09:09 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 - deregister  status: 200
+2025-05-02 11:09:09 INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-05-02 11:09:09 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-02 11:09:09 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-02 11:09:09 DEBUG o.s.b.c.l.ClasspathLoggingApplicationListener - Application started with classpath: [file:/Users/yulin/Documents/Antra/weather-master/student-management-service/target/classes/]
+2025-05-02 11:09:09 DEBUG o.s.boot.SpringApplication - Loading source class org.springframework.cloud.bootstrap.BootstrapImportSelectorConfiguration
+2025-05-02 11:09:09 DEBUG o.s.b.c.c.ConfigFileApplicationListener - Loaded config file 'file:/Users/yulin/Documents/Antra/weather-master/student-management-service/target/classes/bootstrap.properties' (classpath:/bootstrap.properties)
+2025-05-02 11:09:09 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 11:09:09 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$698144b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 11:09:09 DEBUG o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+
+============================
+CONDITIONS EVALUATION REPORT
+============================
+
+
+Positive matches:
+-----------------
+
+   AopAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.context.annotation.EnableAspectJAutoProxy', 'org.aspectj.lang.annotation.Aspect', 'org.aspectj.lang.reflect.Advice', 'org.aspectj.weaver.AnnotatedElement' (OnClassCondition)
+      - @ConditionalOnProperty (spring.aop.auto=true) matched (OnPropertyCondition)
+
+   AopAutoConfiguration.CglibAutoProxyConfiguration matched:
+      - @ConditionalOnProperty (spring.aop.proxy-target-class=true) matched (OnPropertyCondition)
+
+   ConfigServiceBootstrapConfiguration#configServicePropertySource matched:
+      - @ConditionalOnProperty (spring.cloud.config.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.config.client.ConfigServicePropertySourceLocator; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ConfigServiceBootstrapConfiguration.RetryConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.retry.annotation.Retryable', 'org.aspectj.lang.annotation.Aspect', 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration' (OnClassCondition)
+      - @ConditionalOnProperty (spring.cloud.config.fail-fast) matched (OnPropertyCondition)
+
+   ConfigServiceBootstrapConfiguration.RetryConfiguration#configServerRetryInterceptor matched:
+      - @ConditionalOnMissingBean (names: configServerRetryInterceptor; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ConfigurationPropertiesRebinderAutoConfiguration matched:
+      - @ConditionalOnBean (types: org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor; SearchStrategy: all) found bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor' (OnBeanCondition)
+
+   ConfigurationPropertiesRebinderAutoConfiguration#configurationPropertiesBeans matched:
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.context.properties.ConfigurationPropertiesBeans; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ConfigurationPropertiesRebinderAutoConfiguration#configurationPropertiesRebinder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.context.properties.ConfigurationPropertiesRebinder; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   EncryptionBootstrapConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.crypto.encrypt.TextEncryptor' (OnClassCondition)
+
+   PropertyPlaceholderAutoConfiguration#propertySourcesPlaceholderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.context.support.PropertySourcesPlaceholderConfigurer; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   AopAutoConfiguration.JdkDynamicAutoProxyConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.aop.proxy-target-class=false) did not find property 'proxy-target-class' (OnPropertyCondition)
+
+   DiscoveryClientConfigServiceBootstrapConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.cloud.config.discovery.enabled) did not find property 'spring.cloud.config.discovery.enabled' (OnPropertyCondition)
+
+   EncryptionBootstrapConfiguration.RsaEncryptionConfiguration:
+      Did not match:
+         - Keystore nor key found in Environment (EncryptionBootstrapConfiguration.KeyCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.rsa.crypto.RsaSecretEncryptor' (OnClassCondition)
+
+   EncryptionBootstrapConfiguration.VanillaEncryptionConfiguration:
+      Did not match:
+         - @ConditionalOnMissingClass found unwanted class 'org.springframework.security.rsa.crypto.RsaSecretEncryptor' (OnClassCondition)
+
+   EurekaDiscoveryClientConfigServiceBootstrapConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.cloud.config.discovery.enabled) did not find property 'spring.cloud.config.discovery.enabled' (OnPropertyCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.cloud.config.client.ConfigServicePropertySourceLocator' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2025-05-02 11:09:09 DEBUG o.s.b.c.l.ClasspathLoggingApplicationListener - Application started with classpath: [file:/Users/yulin/Documents/Antra/weather-master/student-management-service/target/classes/]
+2025-05-02 11:09:09 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8100
+2025-05-02 11:09:09 DEBUG o.s.web.client.RestTemplate - HTTP GET http://localhost:8100/student-management-service/default
+2025-05-02 11:09:09 DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-05-02 11:09:09 DEBUG o.s.web.client.RestTemplate - Response 200 OK
+2025-05-02 11:09:09 DEBUG o.s.web.client.RestTemplate - Reading to [org.springframework.cloud.config.environment.Environment]
+2025-05-02 11:09:10 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=student-management-service, profiles=[default], label=null, version=33b2aaa106a723e7c72c302ddf690d5a8b53ea0d, state=null
+2025-05-02 11:09:10 INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='file:///Users/yulin/Documents/Antra/weather-master/properties/student-management-service.properties'}]}
+2025-05-02 11:09:10 INFO  c.a.s.StudentManagementServiceApplication - No active profile set, falling back to default profiles: default
+2025-05-02 11:09:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2025-05-02 11:09:10 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4ms. Found 1 repository interfaces.
+2025-05-02 11:09:10 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=a9217e0c-504b-3276-a72e-300de01beede
+2025-05-02 11:09:10 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8f15d64d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 11:09:10 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-05-02 11:09:10 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ea7e114e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 11:09:10 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$69fe5e80] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 11:09:10 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$698144b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 11:09:10 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-05-02 11:09:10 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-02 11:09:10 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-02 11:09:10 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2025-05-02 11:09:10 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-02 11:09:10 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 261 ms
+2025-05-02 11:09:10 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-05-02 11:09:10 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-05-02 11:09:10 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2025-05-02 11:09:10 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2025-05-02 11:09:10 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-02 11:09:10 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-02 11:09:10 WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2025-05-02 11:09:10 INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-05-02 11:09:10 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-05-02 11:09:10 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-02 11:09:10 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoint(s) beneath base path '/actuator'
+2025-05-02 11:09:10 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-05-02 11:09:10 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-05-02 11:09:10 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2025-05-02 11:09:10 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2025-05-02 11:09:10 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2025-05-02 11:09:10 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2025-05-02 11:09:10 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-02 11:09:10 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-05-02 11:09:10 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-05-02 11:09:10 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-05-02 11:09:10 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-05-02 11:09:10 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-05-02 11:09:10 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-05-02 11:09:10 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-05-02 11:09:10 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-05-02 11:09:10 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-05-02 11:09:10 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-02 11:09:10 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1746209350795 with initial instances count: 4
+2025-05-02 11:09:10 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application STUDENT-MANAGEMENT-SERVICE with eureka with status UP
+2025-05-02 11:09:10 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746209350796, current=UP, previous=STARTING]
+2025-05-02 11:09:10 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080: registering service...
+2025-05-02 11:09:10 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 - registration status: 204
+2025-05-02 11:09:10 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-02 11:09:10 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-05-02 11:09:10 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8080
+2025-05-02 11:09:10 INFO  c.a.s.StudentManagementServiceApplication - Started StudentManagementServiceApplication in 1.219 seconds (JVM running for 1564.54)
+2025-05-02 11:09:10 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-05-02 11:09:10 INFO  c.a.s.StudentManagementServiceApplication - ✅ Student Management Service started and logging is working!
+2025-05-02 11:09:24 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-02 11:09:24 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-02 11:09:24 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2025-05-02 11:09:40 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 - Re-registering apps/STUDENT-MANAGEMENT-SERVICE
+2025-05-02 11:09:40 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080: registering service...
+2025-05-02 11:09:40 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 - registration status: 204
+2025-05-02 11:10:30 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application STUDENT-MANAGEMENT-SERVICE with eureka with status DOWN
+2025-05-02 11:10:30 WARN  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746209430748, current=DOWN, previous=UP]
+2025-05-02 11:10:30 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080: registering service...
+2025-05-02 11:10:30 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 - registration status: 204
+2025-05-02 11:10:30 INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2025-05-02 11:10:30 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-02 11:10:30 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-05-02 11:10:33 INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2025-05-02 11:10:33 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 - deregister  status: 200
+2025-05-02 11:10:33 INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-05-02 11:10:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-05-02 11:10:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-05-02 11:10:33 DEBUG o.s.b.c.l.ClasspathLoggingApplicationListener - Application started with classpath: [file:/Users/yulin/Documents/Antra/weather-master/student-management-service/target/classes/]
+2025-05-02 11:10:33 DEBUG o.s.boot.SpringApplication - Loading source class org.springframework.cloud.bootstrap.BootstrapImportSelectorConfiguration
+2025-05-02 11:10:33 DEBUG o.s.b.c.c.ConfigFileApplicationListener - Loaded config file 'file:/Users/yulin/Documents/Antra/weather-master/student-management-service/target/classes/bootstrap.properties' (classpath:/bootstrap.properties)
+2025-05-02 11:10:33 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 11:10:33 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$698144b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 11:10:33 DEBUG o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+
+============================
+CONDITIONS EVALUATION REPORT
+============================
+
+
+Positive matches:
+-----------------
+
+   AopAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.context.annotation.EnableAspectJAutoProxy', 'org.aspectj.lang.annotation.Aspect', 'org.aspectj.lang.reflect.Advice', 'org.aspectj.weaver.AnnotatedElement' (OnClassCondition)
+      - @ConditionalOnProperty (spring.aop.auto=true) matched (OnPropertyCondition)
+
+   AopAutoConfiguration.CglibAutoProxyConfiguration matched:
+      - @ConditionalOnProperty (spring.aop.proxy-target-class=true) matched (OnPropertyCondition)
+
+   ConfigServiceBootstrapConfiguration#configServicePropertySource matched:
+      - @ConditionalOnProperty (spring.cloud.config.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.config.client.ConfigServicePropertySourceLocator; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ConfigServiceBootstrapConfiguration.RetryConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.retry.annotation.Retryable', 'org.aspectj.lang.annotation.Aspect', 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration' (OnClassCondition)
+      - @ConditionalOnProperty (spring.cloud.config.fail-fast) matched (OnPropertyCondition)
+
+   ConfigServiceBootstrapConfiguration.RetryConfiguration#configServerRetryInterceptor matched:
+      - @ConditionalOnMissingBean (names: configServerRetryInterceptor; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ConfigurationPropertiesRebinderAutoConfiguration matched:
+      - @ConditionalOnBean (types: org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor; SearchStrategy: all) found bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor' (OnBeanCondition)
+
+   ConfigurationPropertiesRebinderAutoConfiguration#configurationPropertiesBeans matched:
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.context.properties.ConfigurationPropertiesBeans; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ConfigurationPropertiesRebinderAutoConfiguration#configurationPropertiesRebinder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.context.properties.ConfigurationPropertiesRebinder; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   EncryptionBootstrapConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.crypto.encrypt.TextEncryptor' (OnClassCondition)
+
+   PropertyPlaceholderAutoConfiguration#propertySourcesPlaceholderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.context.support.PropertySourcesPlaceholderConfigurer; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   AopAutoConfiguration.JdkDynamicAutoProxyConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.aop.proxy-target-class=false) did not find property 'proxy-target-class' (OnPropertyCondition)
+
+   DiscoveryClientConfigServiceBootstrapConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.cloud.config.discovery.enabled) did not find property 'spring.cloud.config.discovery.enabled' (OnPropertyCondition)
+
+   EncryptionBootstrapConfiguration.RsaEncryptionConfiguration:
+      Did not match:
+         - Keystore nor key found in Environment (EncryptionBootstrapConfiguration.KeyCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.rsa.crypto.RsaSecretEncryptor' (OnClassCondition)
+
+   EncryptionBootstrapConfiguration.VanillaEncryptionConfiguration:
+      Did not match:
+         - @ConditionalOnMissingClass found unwanted class 'org.springframework.security.rsa.crypto.RsaSecretEncryptor' (OnClassCondition)
+
+   EurekaDiscoveryClientConfigServiceBootstrapConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.cloud.config.discovery.enabled) did not find property 'spring.cloud.config.discovery.enabled' (OnPropertyCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.cloud.config.client.ConfigServicePropertySourceLocator' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2025-05-02 11:10:33 DEBUG o.s.b.c.l.ClasspathLoggingApplicationListener - Application started with classpath: [file:/Users/yulin/Documents/Antra/weather-master/student-management-service/target/classes/]
+2025-05-02 11:10:33 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8100
+2025-05-02 11:10:33 DEBUG o.s.web.client.RestTemplate - HTTP GET http://localhost:8100/student-management-service/default
+2025-05-02 11:10:33 DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-05-02 11:10:34 DEBUG o.s.web.client.RestTemplate - Response 200 OK
+2025-05-02 11:10:34 DEBUG o.s.web.client.RestTemplate - Reading to [org.springframework.cloud.config.environment.Environment]
+2025-05-02 11:10:34 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=student-management-service, profiles=[default], label=null, version=33b2aaa106a723e7c72c302ddf690d5a8b53ea0d, state=null
+2025-05-02 11:10:34 INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='file:///Users/yulin/Documents/Antra/weather-master/properties/student-management-service.properties'}]}
+2025-05-02 11:10:34 INFO  c.a.s.StudentManagementServiceApplication - No active profile set, falling back to default profiles: default
+2025-05-02 11:10:34 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2025-05-02 11:10:34 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 1 repository interfaces.
+2025-05-02 11:10:34 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=a9217e0c-504b-3276-a72e-300de01beede
+2025-05-02 11:10:34 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8f15d64d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 11:10:34 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-05-02 11:10:34 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ea7e114e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 11:10:34 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$69fe5e80] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 11:10:34 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$698144b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 11:10:34 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-05-02 11:10:34 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-02 11:10:34 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-02 11:10:34 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2025-05-02 11:10:34 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-02 11:10:34 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 256 ms
+2025-05-02 11:10:34 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2025-05-02 11:10:34 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2025-05-02 11:10:34 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2025-05-02 11:10:34 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2025-05-02 11:10:34 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-02 11:10:34 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-02 11:10:34 WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2025-05-02 11:10:34 INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-05-02 11:10:34 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-05-02 11:10:34 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-02 11:10:34 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoint(s) beneath base path '/actuator'
+2025-05-02 11:10:34 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-05-02 11:10:34 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-05-02 11:10:34 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2025-05-02 11:10:34 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2025-05-02 11:10:34 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2025-05-02 11:10:34 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2025-05-02 11:10:34 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-02 11:10:34 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-05-02 11:10:34 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-05-02 11:10:34 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-05-02 11:10:34 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-05-02 11:10:34 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-05-02 11:10:34 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-05-02 11:10:34 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-05-02 11:10:34 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-05-02 11:10:34 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-05-02 11:10:34 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-02 11:10:34 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1746209434863 with initial instances count: 4
+2025-05-02 11:10:34 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application STUDENT-MANAGEMENT-SERVICE with eureka with status UP
+2025-05-02 11:10:34 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746209434864, current=UP, previous=STARTING]
+2025-05-02 11:10:34 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080: registering service...
+2025-05-02 11:10:34 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 - registration status: 204
+2025-05-02 11:10:34 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-02 11:10:34 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-05-02 11:10:34 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8080
+2025-05-02 11:10:34 INFO  c.a.s.StudentManagementServiceApplication - Started StudentManagementServiceApplication in 0.983 seconds (JVM running for 1648.608)
+2025-05-02 11:10:34 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-05-02 11:10:34 INFO  c.a.s.StudentManagementServiceApplication - ✅ Student Management Service started and logging is working!
+2025-05-02 11:10:39 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-02 11:10:39 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-02 11:10:39 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2025-05-02 11:12:34 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 - Re-registering apps/STUDENT-MANAGEMENT-SERVICE
+2025-05-02 11:12:34 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080: registering service...
+2025-05-02 11:12:34 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 - registration status: 204
+2025-05-02 11:12:47 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application STUDENT-MANAGEMENT-SERVICE with eureka with status DOWN
+2025-05-02 11:12:47 WARN  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746209567277, current=DOWN, previous=UP]
+2025-05-02 11:12:47 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080: registering service...
+2025-05-02 11:12:47 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 - registration status: 204
+2025-05-02 11:12:47 INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2025-05-02 11:12:47 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-02 11:12:47 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-05-02 11:12:50 INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2025-05-02 11:12:50 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 - deregister  status: 200
+2025-05-02 11:12:50 INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-05-02 11:12:50 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2025-05-02 11:12:50 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2025-05-02 11:12:51 DEBUG o.s.b.c.l.ClasspathLoggingApplicationListener - Application started with classpath: [file:/Users/yulin/Documents/Antra/weather-master/student-management-service/target/classes/]
+2025-05-02 11:12:51 DEBUG o.s.boot.SpringApplication - Loading source class org.springframework.cloud.bootstrap.BootstrapImportSelectorConfiguration
+2025-05-02 11:12:51 DEBUG o.s.b.c.c.ConfigFileApplicationListener - Loaded config file 'file:/Users/yulin/Documents/Antra/weather-master/student-management-service/target/classes/bootstrap.properties' (classpath:/bootstrap.properties)
+2025-05-02 11:12:51 DEBUG o.s.b.d.restart.ChangeableUrls - Matching URLs for reloading : [file:/Users/yulin/Documents/Antra/weather-master/student-management-service/target/classes/]
+2025-05-02 11:12:51 DEBUG o.s.b.d.settings.DevToolsSettings - Included patterns for restart : []
+2025-05-02 11:12:51 DEBUG o.s.b.d.settings.DevToolsSettings - Excluded patterns for restart : [/spring-boot-starter-[\w-]+/, /spring-boot/target/classes/, /spring-boot-starter/target/classes/, /spring-boot-devtools/target/classes/, /spring-boot-actuator/target/classes/, /spring-boot-autoconfigure/target/classes/]
+2025-05-02 11:12:51 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-02 11:12:51 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 11:12:51 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4c1fe425] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 11:12:51 DEBUG o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+
+============================
+CONDITIONS EVALUATION REPORT
+============================
+
+
+Positive matches:
+-----------------
+
+   AopAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.context.annotation.EnableAspectJAutoProxy', 'org.aspectj.lang.annotation.Aspect', 'org.aspectj.lang.reflect.Advice', 'org.aspectj.weaver.AnnotatedElement' (OnClassCondition)
+      - @ConditionalOnProperty (spring.aop.auto=true) matched (OnPropertyCondition)
+
+   AopAutoConfiguration.CglibAutoProxyConfiguration matched:
+      - @ConditionalOnProperty (spring.aop.proxy-target-class=true) matched (OnPropertyCondition)
+
+   ConfigServiceBootstrapConfiguration#configServicePropertySource matched:
+      - @ConditionalOnProperty (spring.cloud.config.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.config.client.ConfigServicePropertySourceLocator; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ConfigServiceBootstrapConfiguration.RetryConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.retry.annotation.Retryable', 'org.aspectj.lang.annotation.Aspect', 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration' (OnClassCondition)
+      - @ConditionalOnProperty (spring.cloud.config.fail-fast) matched (OnPropertyCondition)
+
+   ConfigServiceBootstrapConfiguration.RetryConfiguration#configServerRetryInterceptor matched:
+      - @ConditionalOnMissingBean (names: configServerRetryInterceptor; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ConfigurationPropertiesRebinderAutoConfiguration matched:
+      - @ConditionalOnBean (types: org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor; SearchStrategy: all) found bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor' (OnBeanCondition)
+
+   ConfigurationPropertiesRebinderAutoConfiguration#configurationPropertiesBeans matched:
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.context.properties.ConfigurationPropertiesBeans; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ConfigurationPropertiesRebinderAutoConfiguration#configurationPropertiesRebinder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.context.properties.ConfigurationPropertiesRebinder; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   EncryptionBootstrapConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.crypto.encrypt.TextEncryptor' (OnClassCondition)
+
+   PropertyPlaceholderAutoConfiguration#propertySourcesPlaceholderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.context.support.PropertySourcesPlaceholderConfigurer; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   AopAutoConfiguration.JdkDynamicAutoProxyConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.aop.proxy-target-class=false) did not find property 'proxy-target-class' (OnPropertyCondition)
+
+   DiscoveryClientConfigServiceBootstrapConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.cloud.config.discovery.enabled) did not find property 'spring.cloud.config.discovery.enabled' (OnPropertyCondition)
+
+   EncryptionBootstrapConfiguration.RsaEncryptionConfiguration:
+      Did not match:
+         - Keystore nor key found in Environment (EncryptionBootstrapConfiguration.KeyCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.rsa.crypto.RsaSecretEncryptor' (OnClassCondition)
+
+   EncryptionBootstrapConfiguration.VanillaEncryptionConfiguration:
+      Did not match:
+         - @ConditionalOnMissingClass found unwanted class 'org.springframework.security.rsa.crypto.RsaSecretEncryptor' (OnClassCondition)
+
+   EurekaDiscoveryClientConfigServiceBootstrapConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.cloud.config.discovery.enabled) did not find property 'spring.cloud.config.discovery.enabled' (OnPropertyCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.cloud.config.client.ConfigServicePropertySourceLocator' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2025-05-02 11:12:51 DEBUG o.s.boot.devtools.restart.Restarter - Creating new Restarter for thread Thread[main,5,main]
+2025-05-02 11:12:51 DEBUG o.s.boot.devtools.restart.Restarter - Immediately restarting application
+2025-05-02 11:12:51 DEBUG o.s.boot.devtools.restart.Restarter - Created RestartClassLoader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@31ba30f9
+2025-05-02 11:12:51 DEBUG o.s.boot.devtools.restart.Restarter - Starting application com.antra.studentmanagement.StudentManagementServiceApplication with URLs [file:/Users/yulin/Documents/Antra/weather-master/student-management-service/target/classes/]
+2025-05-02 11:12:51 DEBUG o.s.b.c.l.ClasspathLoggingApplicationListener - Application started with classpath: [file:/Users/yulin/Documents/Antra/weather-master/student-management-service/target/classes/]
+2025-05-02 11:12:51 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8100
+2025-05-02 11:12:51 DEBUG o.s.web.client.RestTemplate - HTTP GET http://localhost:8100/student-management-service/default
+2025-05-02 11:12:51 DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-05-02 11:12:52 DEBUG o.s.web.client.RestTemplate - Response 200 OK
+2025-05-02 11:12:52 DEBUG o.s.web.client.RestTemplate - Reading to [org.springframework.cloud.config.environment.Environment]
+2025-05-02 11:12:52 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=student-management-service, profiles=[default], label=null, version=33b2aaa106a723e7c72c302ddf690d5a8b53ea0d, state=null
+2025-05-02 11:12:52 INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='file:///Users/yulin/Documents/Antra/weather-master/properties/student-management-service.properties'}]}
+2025-05-02 11:12:52 INFO  c.a.s.StudentManagementServiceApplication - No active profile set, falling back to default profiles: default
+2025-05-02 11:12:52 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2025-05-02 11:12:52 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20ms. Found 1 repository interfaces.
+2025-05-02 11:12:52 WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2025-05-02 11:12:52 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=a9217e0c-504b-3276-a72e-300de01beede
+2025-05-02 11:12:52 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$d49da627] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 11:12:52 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-05-02 11:12:52 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3005e128] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 11:12:52 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$af862e5a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 11:12:52 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4c1fe425] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 11:12:52 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-05-02 11:12:52 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-02 11:12:52 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-02 11:12:52 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2025-05-02 11:12:52 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-02 11:12:52 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 821 ms
+2025-05-02 11:12:52 WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2025-05-02 11:12:52 INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-05-02 11:12:52 INFO  c.n.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@54a626ba
+2025-05-02 11:12:53 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-02 11:12:53 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-02 11:12:53 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2025-05-02 11:12:53 INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2025-05-02 11:12:53 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2025-05-02 11:12:53 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2025-05-02 11:12:53 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2025-05-02 11:12:53 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-02 11:12:53 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-02 11:12:53 WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2025-05-02 11:12:53 INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-05-02 11:12:54 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-05-02 11:12:54 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-02 11:12:54 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoint(s) beneath base path '/actuator'
+2025-05-02 11:12:54 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-05-02 11:12:54 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-05-02 11:12:54 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2025-05-02 11:12:54 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2025-05-02 11:12:54 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2025-05-02 11:12:54 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2025-05-02 11:12:54 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-02 11:12:54 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-05-02 11:12:54 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-05-02 11:12:54 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-05-02 11:12:54 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-05-02 11:12:54 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-05-02 11:12:54 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-05-02 11:12:54 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-05-02 11:12:54 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-05-02 11:12:54 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-05-02 11:12:54 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-02 11:12:54 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1746209574699 with initial instances count: 3
+2025-05-02 11:12:54 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application STUDENT-MANAGEMENT-SERVICE with eureka with status UP
+2025-05-02 11:12:54 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746209574702, current=UP, previous=STARTING]
+2025-05-02 11:12:54 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080: registering service...
+2025-05-02 11:12:54 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-02 11:12:54 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDENT-MANAGEMENT-SERVICE/10.0.0.98:student-management-service:8080 - registration status: 204
+2025-05-02 11:12:54 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-05-02 11:12:54 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8080
+2025-05-02 11:12:54 INFO  c.a.s.StudentManagementServiceApplication - Started StudentManagementServiceApplication in 3.089 seconds (JVM running for 3.488)
+2025-05-02 11:12:54 INFO  c.a.s.StudentManagementServiceApplication - ✅ Student Management Service started and logging is working!
+2025-05-02 11:12:55 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-02 11:12:55 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-02 11:12:55 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8100
+2025-05-02 11:12:55 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2025-05-02 11:12:55 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=student-management-service, profiles=[default], label=null, version=33b2aaa106a723e7c72c302ddf690d5a8b53ea0d, state=null
+2025-05-02 11:17:54 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-02 11:22:54 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

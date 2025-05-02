@@ -1,0 +1,132 @@
+2025-05-02 11:01:15 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e6556e0d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 11:01:16 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8100
+2025-05-02 11:01:16 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=gateway, profiles=[dev], label=null, version=bcc72c594ad2149a0093b20ff9e2a7d73dba8cd1, state=null
+2025-05-02 11:01:16 INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='file:///Users/yulin/Documents/Antra/weather-master/properties/gateway-dev.properties'}]}
+2025-05-02 11:01:16 INFO  c.example.gateway.GatewayApplication - The following profiles are active: dev
+2025-05-02 11:01:16 WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2025-05-02 11:01:16 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=43dab156-36be-3069-a591-df233cc609d7
+2025-05-02 11:01:16 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e6556e0d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 11:01:16 WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2025-05-02 11:01:16 INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-05-02 11:01:16 WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2025-05-02 11:01:16 INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-05-02 11:01:16 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2025-05-02 11:01:16 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2025-05-02 11:01:16 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2025-05-02 11:01:16 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2025-05-02 11:01:16 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2025-05-02 11:01:16 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2025-05-02 11:01:16 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2025-05-02 11:01:16 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2025-05-02 11:01:16 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2025-05-02 11:01:16 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2025-05-02 11:01:16 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2025-05-02 11:01:16 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2025-05-02 11:01:16 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-05-02 11:01:16 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoint(s) beneath base path '/actuator'
+2025-05-02 11:01:16 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-05-02 11:01:16 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-05-02 11:01:17 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2025-05-02 11:01:17 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2025-05-02 11:01:17 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2025-05-02 11:01:17 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2025-05-02 11:01:17 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-02 11:01:17 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-05-02 11:01:17 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-05-02 11:01:17 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-05-02 11:01:17 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-05-02 11:01:17 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-05-02 11:01:17 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-05-02 11:01:17 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-05-02 11:01:17 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-05-02 11:01:17 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 10
+2025-05-02 11:01:17 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-02 11:01:17 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1746208877154 with initial instances count: 0
+2025-05-02 11:01:17 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application GATEWAY with eureka with status UP
+2025-05-02 11:01:17 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746208877155, current=UP, previous=STARTING]
+2025-05-02 11:01:17 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/10.0.0.98:gateway:8200: registering service...
+2025-05-02 11:01:17 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/10.0.0.98:gateway:8200 - registration status: 204
+2025-05-02 11:01:17 INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8200
+2025-05-02 11:01:17 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8200
+2025-05-02 11:01:17 INFO  c.example.gateway.GatewayApplication - Started GatewayApplication in 1.52 seconds (JVM running for 1.763)
+2025-05-02 11:01:17 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8100
+2025-05-02 11:01:17 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=gateway, profiles=[dev], label=null, version=bcc72c594ad2149a0093b20ff9e2a7d73dba8cd1, state=null
+2025-05-02 11:01:47 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-05-02 11:01:47 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-05-02 11:01:47 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-05-02 11:01:47 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-05-02 11:01:47 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-05-02 11:01:47 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2025-05-02 11:01:47 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-05-02 11:01:47 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-05-02 11:06:17 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-02 11:09:37 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/10.0.0.98:gateway:8200 - Re-registering apps/GATEWAY
+2025-05-02 11:09:37 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/10.0.0.98:gateway:8200: registering service...
+2025-05-02 11:09:37 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/10.0.0.98:gateway:8200 - registration status: 204
+2025-05-02 11:11:17 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-02 11:12:17 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/10.0.0.98:gateway:8200 - Re-registering apps/GATEWAY
+2025-05-02 11:12:17 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/10.0.0.98:gateway:8200: registering service...
+2025-05-02 11:12:17 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/10.0.0.98:gateway:8200 - registration status: 204
+2025-05-02 11:12:21 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application GATEWAY with eureka with status DOWN
+2025-05-02 11:12:21 WARN  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746209541032, current=DOWN, previous=UP]
+2025-05-02 11:12:21 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/10.0.0.98:gateway:8200: registering service...
+2025-05-02 11:12:21 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/10.0.0.98:gateway:8200 - registration status: 204
+2025-05-02 11:12:21 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-05-02 11:12:24 INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2025-05-02 11:12:24 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/10.0.0.98:gateway:8200 - deregister  status: 200
+2025-05-02 11:12:24 INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-05-02 11:12:25 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a644cd7e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 11:12:25 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8100
+2025-05-02 11:12:25 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=gateway, profiles=[dev], label=null, version=33b2aaa106a723e7c72c302ddf690d5a8b53ea0d, state=null
+2025-05-02 11:12:25 INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='file:///Users/yulin/Documents/Antra/weather-master/properties/gateway-dev.properties'}]}
+2025-05-02 11:12:25 INFO  c.example.gateway.GatewayApplication - The following profiles are active: dev
+2025-05-02 11:12:25 WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2025-05-02 11:12:25 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=43dab156-36be-3069-a591-df233cc609d7
+2025-05-02 11:12:25 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a644cd7e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 11:12:26 WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2025-05-02 11:12:26 INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-05-02 11:12:26 WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2025-05-02 11:12:26 INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-05-02 11:12:26 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2025-05-02 11:12:26 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2025-05-02 11:12:26 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2025-05-02 11:12:26 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2025-05-02 11:12:26 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2025-05-02 11:12:26 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2025-05-02 11:12:26 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2025-05-02 11:12:26 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2025-05-02 11:12:26 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2025-05-02 11:12:26 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2025-05-02 11:12:26 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2025-05-02 11:12:26 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2025-05-02 11:12:26 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-05-02 11:12:26 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoint(s) beneath base path '/actuator'
+2025-05-02 11:12:26 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-05-02 11:12:26 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-05-02 11:12:26 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2025-05-02 11:12:26 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2025-05-02 11:12:26 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2025-05-02 11:12:26 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2025-05-02 11:12:26 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-02 11:12:26 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-05-02 11:12:26 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-05-02 11:12:26 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-05-02 11:12:26 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-05-02 11:12:26 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-05-02 11:12:26 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-05-02 11:12:26 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-05-02 11:12:26 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-05-02 11:12:26 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 10
+2025-05-02 11:12:26 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-02 11:12:26 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1746209546713 with initial instances count: 1
+2025-05-02 11:12:26 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application GATEWAY with eureka with status UP
+2025-05-02 11:12:26 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746209546714, current=UP, previous=STARTING]
+2025-05-02 11:12:26 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/10.0.0.98:gateway:8200: registering service...
+2025-05-02 11:12:26 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/10.0.0.98:gateway:8200 - registration status: 204
+2025-05-02 11:12:26 INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8200
+2025-05-02 11:12:26 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8200
+2025-05-02 11:12:26 INFO  c.example.gateway.GatewayApplication - Started GatewayApplication in 1.564 seconds (JVM running for 1.95)
+2025-05-02 11:12:27 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8100
+2025-05-02 11:12:27 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=gateway, profiles=[dev], label=null, version=33b2aaa106a723e7c72c302ddf690d5a8b53ea0d, state=null
+2025-05-02 11:17:26 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-02 11:22:26 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

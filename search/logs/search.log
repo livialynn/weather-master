@@ -1,0 +1,168 @@
+2025-05-02 10:32:53 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$29806d80] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 10:32:53 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8100
+2025-05-02 10:32:53 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=search, profiles=[dev], label=null, version=b44128be1d916f9bcdcbc883c68ec484b9c14e02, state=null
+2025-05-02 10:32:53 INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='file:///Users/yulin/Documents/Antra/weather-master/properties/search-dev.properties'}]}
+2025-05-02 10:32:53 INFO  com.example.search.SearchApplication - The following profiles are active: dev
+2025-05-02 10:32:53 WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2025-05-02 10:32:53 WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2025-05-02 10:32:53 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f4fe88b3-79c6-3a52-b088-925ee7ee4e46
+2025-05-02 10:32:53 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$29806d80] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 10:32:54 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9001 (http)
+2025-05-02 10:32:54 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9001"]
+2025-05-02 10:32:54 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-02 10:32:54 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2025-05-02 10:32:54 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-02 10:32:54 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 523 ms
+2025-05-02 10:32:54 WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2025-05-02 10:32:54 INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-05-02 10:32:54 INFO  c.n.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4536a715
+2025-05-02 10:32:54 WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2025-05-02 10:32:54 INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-05-02 10:32:54 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-05-02 10:32:54 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoint(s) beneath base path '/actuator'
+2025-05-02 10:32:54 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-05-02 10:32:54 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-05-02 10:32:54 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2025-05-02 10:32:54 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2025-05-02 10:32:54 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2025-05-02 10:32:54 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2025-05-02 10:32:54 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-02 10:32:54 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-05-02 10:32:54 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-05-02 10:32:54 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-05-02 10:32:54 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-05-02 10:32:54 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-05-02 10:32:54 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-05-02 10:32:54 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-05-02 10:32:54 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-05-02 10:32:54 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-05-02 10:32:54 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-02 10:32:54 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1746207174872 with initial instances count: 3
+2025-05-02 10:32:54 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application SEARCH with eureka with status UP
+2025-05-02 10:32:54 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746207174874, current=UP, previous=STARTING]
+2025-05-02 10:32:54 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCH/10.0.0.98:search:9001: registering service...
+2025-05-02 10:32:54 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9001"]
+2025-05-02 10:32:54 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCH/10.0.0.98:search:9001 - registration status: 204
+2025-05-02 10:32:54 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9001 (http) with context path ''
+2025-05-02 10:32:54 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9001
+2025-05-02 10:32:54 INFO  com.example.search.SearchApplication - Started SearchApplication in 1.728 seconds (JVM running for 1.981)
+2025-05-02 10:32:54 INFO  com.example.search.SearchApplication - ✅ Search service started successfully!
+2025-05-02 10:32:55 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-02 10:32:55 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-02 10:32:55 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8100
+2025-05-02 10:32:55 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2025-05-02 10:32:55 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=search, profiles=[dev], label=null, version=b44128be1d916f9bcdcbc883c68ec484b9c14e02, state=null
+2025-05-02 10:36:55 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCH/10.0.0.98:search:9001 - Re-registering apps/SEARCH
+2025-05-02 10:36:55 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCH/10.0.0.98:search:9001: registering service...
+2025-05-02 10:36:55 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCH/10.0.0.98:search:9001 - registration status: 204
+2025-05-02 10:37:25 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-05-02 10:37:25 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-05-02 10:37:25 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-05-02 10:37:25 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-05-02 10:37:25 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-05-02 10:37:25 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2025-05-02 10:37:25 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-05-02 10:37:25 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-05-02 10:37:54 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-02 10:42:54 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-02 10:47:54 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-02 10:52:25 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCH/10.0.0.98:search:9001 - Re-registering apps/SEARCH
+2025-05-02 10:52:25 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCH/10.0.0.98:search:9001: registering service...
+2025-05-02 10:52:25 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCH/10.0.0.98:search:9001 - registration status: 204
+2025-05-02 10:52:54 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-02 10:52:55 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-05-02 10:52:55 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-05-02 10:52:55 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-05-02 10:52:55 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-05-02 10:52:55 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-05-02 10:52:55 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2025-05-02 10:52:55 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-05-02 10:52:55 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-05-02 10:54:55 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCH/10.0.0.98:search:9001 - Re-registering apps/SEARCH
+2025-05-02 10:54:55 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCH/10.0.0.98:search:9001: registering service...
+2025-05-02 10:54:55 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCH/10.0.0.98:search:9001 - registration status: 204
+2025-05-02 10:57:54 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-02 11:01:25 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCH/10.0.0.98:search:9001 - Re-registering apps/SEARCH
+2025-05-02 11:01:25 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCH/10.0.0.98:search:9001: registering service...
+2025-05-02 11:01:25 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCH/10.0.0.98:search:9001 - registration status: 204
+2025-05-02 11:01:55 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-05-02 11:01:55 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-05-02 11:01:55 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-05-02 11:01:55 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-05-02 11:01:55 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-05-02 11:01:55 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2025-05-02 11:01:55 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-05-02 11:01:55 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-05-02 11:02:54 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-02 11:07:54 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-02 11:09:55 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCH/10.0.0.98:search:9001 - Re-registering apps/SEARCH
+2025-05-02 11:09:55 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCH/10.0.0.98:search:9001: registering service...
+2025-05-02 11:09:55 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCH/10.0.0.98:search:9001 - registration status: 204
+2025-05-02 11:12:26 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCH/10.0.0.98:search:9001 - Re-registering apps/SEARCH
+2025-05-02 11:12:26 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCH/10.0.0.98:search:9001: registering service...
+2025-05-02 11:12:26 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCH/10.0.0.98:search:9001 - registration status: 204
+2025-05-02 11:12:30 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application SEARCH with eureka with status DOWN
+2025-05-02 11:12:30 WARN  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746209550272, current=DOWN, previous=UP]
+2025-05-02 11:12:30 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCH/10.0.0.98:search:9001: registering service...
+2025-05-02 11:12:30 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCH/10.0.0.98:search:9001 - registration status: 204
+2025-05-02 11:12:30 INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2025-05-02 11:12:30 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2025-05-02 11:12:33 INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2025-05-02 11:12:33 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCH/10.0.0.98:search:9001 - deregister  status: 200
+2025-05-02 11:12:33 INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2025-05-02 11:12:34 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d0f5e666] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 11:12:34 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8100
+2025-05-02 11:12:34 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=search, profiles=[dev], label=null, version=33b2aaa106a723e7c72c302ddf690d5a8b53ea0d, state=null
+2025-05-02 11:12:34 INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='file:///Users/yulin/Documents/Antra/weather-master/properties/search-dev.properties'}]}
+2025-05-02 11:12:34 INFO  com.example.search.SearchApplication - The following profiles are active: dev
+2025-05-02 11:12:35 WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2025-05-02 11:12:35 WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2025-05-02 11:12:35 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f4fe88b3-79c6-3a52-b088-925ee7ee4e46
+2025-05-02 11:12:35 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d0f5e666] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-05-02 11:12:35 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9001 (http)
+2025-05-02 11:12:35 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9001"]
+2025-05-02 11:12:35 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-02 11:12:35 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2025-05-02 11:12:35 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-02 11:12:35 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 525 ms
+2025-05-02 11:12:35 WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2025-05-02 11:12:35 INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-05-02 11:12:35 INFO  c.n.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3686389
+2025-05-02 11:12:35 WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2025-05-02 11:12:35 INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2025-05-02 11:12:35 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-05-02 11:12:35 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoint(s) beneath base path '/actuator'
+2025-05-02 11:12:35 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-05-02 11:12:35 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2025-05-02 11:12:35 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2025-05-02 11:12:35 INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2025-05-02 11:12:36 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2025-05-02 11:12:36 INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2025-05-02 11:12:36 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-02 11:12:36 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2025-05-02 11:12:36 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2025-05-02 11:12:36 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2025-05-02 11:12:36 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2025-05-02 11:12:36 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2025-05-02 11:12:36 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2025-05-02 11:12:36 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2025-05-02 11:12:36 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2025-05-02 11:12:36 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2025-05-02 11:12:36 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-05-02 11:12:36 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1746209556128 with initial instances count: 3
+2025-05-02 11:12:36 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application SEARCH with eureka with status UP
+2025-05-02 11:12:36 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1746209556130, current=UP, previous=STARTING]
+2025-05-02 11:12:36 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCH/10.0.0.98:search:9001: registering service...
+2025-05-02 11:12:36 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9001"]
+2025-05-02 11:12:36 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCH/10.0.0.98:search:9001 - registration status: 204
+2025-05-02 11:12:36 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9001 (http) with context path ''
+2025-05-02 11:12:36 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9001
+2025-05-02 11:12:36 INFO  com.example.search.SearchApplication - Started SearchApplication in 1.759 seconds (JVM running for 2.074)
+2025-05-02 11:12:36 INFO  com.example.search.SearchApplication - ✅ Search service started successfully!
+2025-05-02 11:12:36 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-02 11:12:36 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-02 11:12:36 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8100
+2025-05-02 11:12:36 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2025-05-02 11:12:36 INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=search, profiles=[dev], label=null, version=33b2aaa106a723e7c72c302ddf690d5a8b53ea0d, state=null
+2025-05-02 11:17:36 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2025-05-02 11:22:36 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
